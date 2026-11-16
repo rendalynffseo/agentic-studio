@@ -1,0 +1,20 @@
+{
+  "catalog_url": "https://igaming-templates.vercel.app",
+  "verified_at": "2026-11-16",
+  "default_selection": "auto",
+  "templates": [
+    {"id":"t1","name":"Promo Landing","style":"Red and gold landing page","download":"iGaming_Templates_1.zip"},
+    {"id":"t2","name":"App Guide","style":"Dark ink and gold guide with sticky sidebar","download":"iGaming_Templates_2_AppGuide.zip"},
+    {"id":"t3","name":"Casino Lobby","style":"Navy sidebar and portrait cards","download":"iGaming_Templates_3_CasinoLobby.zip"},
+    {"id":"t4","name":"Casino Portal","style":"Light orange portal","download":"iGaming_Templates_4_CasinoPortal.zip"},
+    {"id":"t5","name":"Teal Glow","style":"Dark teal with gold gradients","download":"iGaming_Templates_5_TealGlow.zip"},
+    {"id":"t6","name":"Green Lobby","style":"Green and yellow lobby","download":"iGaming_Templates_6_GreenLobby.zip"},
+    {"id":"t7","name":"Green Dashboard","style":"Dark green and gold three-column layout","download":"iGaming_Templates_7_GreenLobby.zip"},
+    {"id":"t8","name":"Royal VIP","style":"White, purple, and gold","download":"iGaming_Templates_8_RoyalVIP.zip"},
+    {"id":"t9","name":"Free Credit","style":"Charcoal and yellow portal","download":"iGaming_Templates_9_FreeCredit.zip"},
+    {"id":"t10","name":"Rose Lounge","style":"Cream, rose, and maroon","download":"iGaming_Templates_10_RoseLounge.zip"},
+    {"id":"t11","name":"Neon Teal","style":"Navy with neon teal glow","download":"iGaming_Templates_11_NeonTeal.zip"},
+    {"id":"t12","name":"Red Gold Guide","style":"Black, charcoal, red, and gold guide","download":"iGaming_Templates_12_RedGoldGuide.zip"},
+    {"id":"t13","name":"Sky Glow","style":"Navy and sky-blue glow","download":"iGaming_Templates_13_SkyGlow.zip"}
+  ]
+}

@@ -1,0 +1,1395 @@
+{
+    "imported_at":  "2026-11-16T08:12:28.9136474Z",
+    "archive_sha256":  "d78393666c6b22f23e870881147154b11916ca4788a33729be30f484ed70af34",
+    "files":  [
+                  {
+                      "path":  "iGaming_Templates_1/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/README.md",
+                      "sha256":  "2129cac3bfc0d623e10bd91c1889e7cd0be125ba63293e325fa28316e42580bc",
+                      "length":  3088
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/NEW_SITE_BRIEF.md",
+                      "sha256":  "0b06a03d05548044c2995e6d02b7c8f25169958012ddfa0d9b6acfe515f495ee",
+                      "length":  1476
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/deploy.sh",
+                      "sha256":  "f9e0cf1fd90efc07bb2fc5cb8d76fac543e68d2bb220b08a19e3806adc681383",
+                      "length":  1274
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/CLAUDE.md",
+                      "sha256":  "96210a47d5dfe10412484c02317a0be943ba0eba5a686eccda1a162910a8ac23",
+                      "length":  5808
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/favicon.svg",
+                      "sha256":  "5fd407bbfc9e58233584fca635df681669ecce89796d66a4ca7347e9a05d81b6",
+                      "length":  249
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/images/src/README.txt",
+                      "sha256":  "60934de9af85e92077402d6a136a4c6949721ee117e508d9bd7bb113d114dfd5",
+                      "length":  189
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/posts_2.py",
+                      "sha256":  "e6e1198c2f8ed56a7e3a480c729ec3b3f45eea349b871432de64e25194888aac",
+                      "length":  86508
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/build.py",
+                      "sha256":  "0e27152cc228686d409bc9a02510d458b372d168496717032115a69a964077d0",
+                      "length":  32324
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/posts_3.py",
+                      "sha256":  "34e7158229ceff6ca5273a9e96654f9406660b5f9a9eadae0dd677fdf4b2f53e",
+                      "length":  84864
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/indexnow.py",
+                      "sha256":  "e296c1edc49e6d6e6b18cb93643c3a87e1b0df0a67c3d9ca75490799c141b181",
+                      "length":  2421
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/icons.py",
+                      "sha256":  "26c9569666464a98ecdfd7868700b6ff17d8802e30cd259fadd3a45d0f7c7f07",
+                      "length":  4286
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/site_config.py",
+                      "sha256":  "b7e4307b51609377983894e94491abe9870844a36a421903427922bde128b50b",
+                      "length":  2727
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/custom_sections.py",
+                      "sha256":  "249186f55fa0f50ce2b6b52fe329d0103e1ab4428762cc1eeea499ad7346b0ef",
+                      "length":  1097
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/images.py",
+                      "sha256":  "6c759f78b8dc5d7d5e567474122ed9c5e1fee01257eb0e5fbae05f293d3b9e50",
+                      "length":  2903
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/build/posts_1.py",
+                      "sha256":  "d3dfdb1cc25ad3f4dd50e66350793978257d28fe4cca90b32374acbe531924f6",
+                      "length":  79258
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/assets/main.js",
+                      "sha256":  "25834a2c3d766a11d4abe58c60e060fea703feb90d851bc8dfa7bf3652ee1445",
+                      "length":  1515
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/assets/style.css",
+                      "sha256":  "07a64fa256d334c0b5519cac185d1bbd1672daff4aa5ca020f3b8154c3b4fcca",
+                      "length":  9640
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/assets/fonts/quicksand-700.woff2",
+                      "sha256":  "20d3848b2f3b25248b57b8b79897a3d864fbdef2d75bae4b08be799df641761b",
+                      "length":  15152
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/assets/fonts/quicksand-600.woff2",
+                      "sha256":  "89c243e5be18448cfa067adf45f752dd51ccbe41bc2b56e396cf3a8892bfe193",
+                      "length":  15944
+                  },
+                  {
+                      "path":  "iGaming_Templates_1/assets/fonts/quicksand-400.woff2",
+                      "sha256":  "efe3312147466e8433b9f538bc90fee49f3610559b2b2e71a525b294d7162604",
+                      "length":  15852
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/README.md",
+                      "sha256":  "a095c515756333891043e1a91409c6440e815f8ac2093a5bb24af86433d207f7",
+                      "length":  2387
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/NEW_SITE_BRIEF.md",
+                      "sha256":  "7c05462e8714a4fa1868d9e6b2aadae8eaa9722ff0b27c58719140e928cb47bd",
+                      "length":  1508
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/deploy.sh",
+                      "sha256":  "cad46da064bc0a8817a9964233ea2b54d6a1e2000783e4c46eb289c83ffb8130",
+                      "length":  1470
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/CLAUDE.md",
+                      "sha256":  "21ca677a35f241fb6e5521a0705b6a3b1d507289fdac4e5405c48f09d3012b9e",
+                      "length":  6034
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/images/src/README.txt",
+                      "sha256":  "73c0ae1c2ba2310feac57963829e66ea68fb7f9bcbaf0a62de0beb660c75f031",
+                      "length":  332
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/build.py",
+                      "sha256":  "5319d5c14424e62125025cd8f351f64fa3bd457cf4942f1973f514906640ed5f",
+                      "length":  37911
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/icons.py",
+                      "sha256":  "8a55674bfcb918af17fb95d77f9acbadcc41d0b185648ec49918b9d723767834",
+                      "length":  3778
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/site_config.py",
+                      "sha256":  "e783fb7a644595b1d2c51f67cd87321c255b8984565ea600f47fa94ea2be321a",
+                      "length":  4727
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/posts.py",
+                      "sha256":  "649dea38fa18145dfd76317ed9a97c82934aef39175b89598c975ce3cf5e340c",
+                      "length":  21574
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/pages.py",
+                      "sha256":  "b2ee35e0c6bf5d390cb45e633a64201056575876e7d6f83b87069787eb31a10e",
+                      "length":  12549
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/content.py",
+                      "sha256":  "ac2a676d243c00855790f6d4ce6bb33716222a66ad92b5c0e4557d4ab251a3b2",
+                      "length":  43401
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/custom_sections.py",
+                      "sha256":  "5ce8078bd737b25907b09285d230c61b834f8c0241d0d7304a12333b47f296a8",
+                      "length":  1263
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/build/images.py",
+                      "sha256":  "227db749b0b8be054b658793a69269adda8429a600942aa108838de25aed8eca",
+                      "length":  3210
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/assets/main.js",
+                      "sha256":  "375f64e91983d3b8800cbefd937bd885a1661c1bc632442e1a6d396d3037f26b",
+                      "length":  1217
+                  },
+                  {
+                      "path":  "iGaming_Templates_2_AppGuide/assets/style.css",
+                      "sha256":  "01c98ab8fa6aa020b7ff36f12e6cbe4040a184e83c1cbf60f5d681b1dc607cc9",
+                      "length":  20494
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/README.md",
+                      "sha256":  "80e36a3a8a7fa72b9e7ca946a79429c96dcff7527b9d23c006f08eea694c2a57",
+                      "length":  2242
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/NEW_SITE_BRIEF.md",
+                      "sha256":  "e26c33f721dcc568a4d673c5a70e188f7ea6778acdef7384f4ff564b808eece3",
+                      "length":  1647
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/deploy.sh",
+                      "sha256":  "cad46da064bc0a8817a9964233ea2b54d6a1e2000783e4c46eb289c83ffb8130",
+                      "length":  1470
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/CLAUDE.md",
+                      "sha256":  "1b7a3431470804f7332917f6065485bad36ac6edf7354827d5eb52e83c1481b5",
+                      "length":  5630
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/images/src/README.txt",
+                      "sha256":  "1fa3939d81a910375ef46fb192f66b6dceefc382c4955bdd07fee37bf71a237e",
+                      "length":  236
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/build.py",
+                      "sha256":  "53f46451c02358433d1f7ea79591ff1fd473f41743d4533ca5e64c015d27c3ae",
+                      "length":  30422
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/icons.py",
+                      "sha256":  "d75ab0eb4665e2ee901df2de2883fe7405b65bcb2dfcc307e60f28766984c1c6",
+                      "length":  3170
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/site_config.py",
+                      "sha256":  "b74caad89141047d5b8f75d8ee9586292d4852147235b1ee953b9e8db40adfca",
+                      "length":  6080
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/posts.py",
+                      "sha256":  "22430fb4345eb1c78735710f8f73f343c277bff7163bbd238b09daaca091b959",
+                      "length":  15164
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/pages.py",
+                      "sha256":  "1f74b300d3fd1e7a3381e5bce0ab7f5e7fb2f2c006a7f0dcb1997b00a0c040ec",
+                      "length":  5038
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/content.py",
+                      "sha256":  "e4018ac2208810eff69767397befd3578ed25dd653c315e7eb5fafa866d1637e",
+                      "length":  26962
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/custom_sections.py",
+                      "sha256":  "95b37b2da725009d2863cb7a1e3052bf832eeaaff0f0a2eb8d48f36c9937f20d",
+                      "length":  625
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/build/images.py",
+                      "sha256":  "31e86b7f6182963db9cc87a4103697bc9a80678db3aca824ff5fff9aca5c3d5a",
+                      "length":  3435
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/assets/main.js",
+                      "sha256":  "5077cda011f3749ed2f477cbaa92710e714d35c64e28abff617660789b7fe199",
+                      "length":  1595
+                  },
+                  {
+                      "path":  "iGaming_Templates_3_CasinoLobby/assets/style.css",
+                      "sha256":  "b3b289d4bc94a4674fdf556bf486d7c99f48285c7569a0300da86fafc0b3423b",
+                      "length":  21303
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/README.md",
+                      "sha256":  "a1cfe76f42b9dd541272b1eef1db559afc20b7bd7a4356bd5f34aff30006ca74",
+                      "length":  2408
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/NEW_SITE_BRIEF.md",
+                      "sha256":  "849768962161b44a86f749bddac7730d450887f53c1137a6e190a921463a29e7",
+                      "length":  1303
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/CLAUDE.md",
+                      "sha256":  "7b5905dcbc292a2519526ea96d4bbb0736e1de74e51b22ebfd3af2c778e6ff90",
+                      "length":  4845
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/images/src/README.txt",
+                      "sha256":  "e27551427b7f30f68f92ffb4fbcc534763def368387ab3f7552685fa03865577",
+                      "length":  398
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/build.py",
+                      "sha256":  "477b215df081f72955ba24f31d457e11eb320192628faafcfd96f3bfa5865d41",
+                      "length":  35308
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/icons.py",
+                      "sha256":  "a8627101d06f744c30e36a6e48a274cd541cf6f7f3b813b5b2b545ea0c27d3de",
+                      "length":  4571
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/site_config.py",
+                      "sha256":  "38280ca97039b7caf78158e6305c8379110840476161afd26be472544eea9b7a",
+                      "length":  3735
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/posts.py",
+                      "sha256":  "8bbb7083a4e9c25a54cb20a6ac569e14f77140589510b2ab51481caac28a002a",
+                      "length":  28074
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/pages.py",
+                      "sha256":  "566a1682e2e6fe5c1f0307b7fdf521b00678a05b97eebbd78a190822a66bdd87",
+                      "length":  40198
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/content.py",
+                      "sha256":  "7da21083c15f93b75793b191c7744545f55de7b0e21481c141436f065c09c18d",
+                      "length":  16989
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/build/images.py",
+                      "sha256":  "1bc38dd6399af96e1ffd61c16d8c36d8d3ad7bcea6683e66ff38f111d6ab93be",
+                      "length":  3188
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/assets/main.js",
+                      "sha256":  "12c75b642a289c3fd371dace37a72ed8ddac16310b4dfe78dbe2eb8a15df8019",
+                      "length":  993
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/assets/style.css",
+                      "sha256":  "a9dbc63b44d6e834aa195acc8b45f93d3b3522b9c0812211ad7a8e28ae8d12ab",
+                      "length":  16533
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/assets/fonts/outfit-800.woff2",
+                      "sha256":  "3dfc169d84444c367b11ea7ea37ea904be6d1363018d05f91172f7ada48005ce",
+                      "length":  14084
+                  },
+                  {
+                      "path":  "iGaming_Templates_4_CasinoPortal/assets/fonts/outfit-600.woff2",
+                      "sha256":  "3736ab9f280abac079bb17ea654cf2c66fb4cf100f486c570a02d2bd6f933c96",
+                      "length":  14196
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/README.md",
+                      "sha256":  "01c6c73fac63a73c794249fd1c87d29e2235272fa0442188d49f3037a4571ba5",
+                      "length":  2503
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/NEW_SITE_BRIEF.md",
+                      "sha256":  "b1f89e9a86f9d4587ef984ea7d4350a9628028f2324382eb1640dde6caee2804",
+                      "length":  1399
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/CLAUDE.md",
+                      "sha256":  "2c8e5b58f4bc6536f61c8579e0b888823f533b6c945756d835e503d379e18dd5",
+                      "length":  5406
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/images/src/README.txt",
+                      "sha256":  "e27551427b7f30f68f92ffb4fbcc534763def368387ab3f7552685fa03865577",
+                      "length":  398
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/build.py",
+                      "sha256":  "f1d49b035171afef89b0f07a1a1a5e5a50dcdde07850fe80cc19daa5af0ce678",
+                      "length":  39633
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/icons.py",
+                      "sha256":  "0b1524ddaa8350530d02a87199ba8e223c39c94e568e109c82a62c2baae77b45",
+                      "length":  4554
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/site_config.py",
+                      "sha256":  "db53622acf81879eb57b96f8a301d70ad43a18c73eca2f338533f61eef7500d6",
+                      "length":  3863
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/posts.py",
+                      "sha256":  "8bbb7083a4e9c25a54cb20a6ac569e14f77140589510b2ab51481caac28a002a",
+                      "length":  28074
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/pages.py",
+                      "sha256":  "1f685697c7f97a32233a697de5070d08f385a228621961377cc9f359fd49288e",
+                      "length":  62930
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/content.py",
+                      "sha256":  "82a6f1ec17dc412e7d99f456fc60d9567eae27941bcceb126f096065e5a29cca",
+                      "length":  17889
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/build/images.py",
+                      "sha256":  "67b57c5365757efa1f860c259dd9fae42cd3a13aa64b5027ea4cdff689b6552d",
+                      "length":  3221
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/assets/main.js",
+                      "sha256":  "f5713f75ec665d7309d20fb22b5f308e1502d33110fec71e83566dc8db342a6c",
+                      "length":  1283
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/assets/style.css",
+                      "sha256":  "65796037f8a6c7304f5949898e099ac7c4b817a17d2b724d63393d4548b7d027",
+                      "length":  23690
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/assets/fonts/poppins-600.woff2",
+                      "sha256":  "872e862918591a9e824dc03ed92f05729435ffbb8ebbb10eff7eda26592b1798",
+                      "length":  7992
+                  },
+                  {
+                      "path":  "iGaming_Templates_5_TealGlow/assets/fonts/poppins-800.woff2",
+                      "sha256":  "4ef5511d8e7b39ae3f98ffed14d6071d7914e0c145fee5a79bb43aa962ff0fc4",
+                      "length":  7816
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/README.md",
+                      "sha256":  "264bd041ac63827923b2fffcb98f0520e919ce5d89a4f29ff7d2469409f6b9ba",
+                      "length":  2459
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/NEW_SITE_BRIEF.md",
+                      "sha256":  "3ebc9e2a4fe56f87795d7da9e74d07451300ef5c5db13dab5038817872ac0c84",
+                      "length":  1458
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/CLAUDE.md",
+                      "sha256":  "610722caeeb0f95a6dfb7f54ed43613661dc25976a9c952338c21110e0773d8a",
+                      "length":  5370
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/images/src/README.txt",
+                      "sha256":  "e06732afd8ff2d1ccdd4296099777c70d5b27961926c38809ac73d7076992585",
+                      "length":  550
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/build.py",
+                      "sha256":  "3775c277e0ea6b3c47e507e1e05b157ab09a17decaa22624e8bd21b456b84ee8",
+                      "length":  38322
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/icons.py",
+                      "sha256":  "283f73b59e9ee37ca0c196928aae593bdf0ad1f0ce0da82aae98deea0bf3c0ea",
+                      "length":  4618
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/site_config.py",
+                      "sha256":  "d67f7b5354d2281f776362119b025384c4b12ed570fc42f4a73c3e53510860b0",
+                      "length":  5382
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/posts.py",
+                      "sha256":  "8bbb7083a4e9c25a54cb20a6ac569e14f77140589510b2ab51481caac28a002a",
+                      "length":  28074
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/pages.py",
+                      "sha256":  "b136ac9401f52b02cd05c4c9aee4f406d5ba0b35b49db379832d798ebeda4cfe",
+                      "length":  47730
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/content.py",
+                      "sha256":  "a973dd8251b53310425d5866eaef3172698fd610ba801f34f8102872e3f458f5",
+                      "length":  13957
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/build/images.py",
+                      "sha256":  "f08872f65b5f0577f1f4a989e2f532bdd86f2983fa4f2e08e4d0371bbf756c0f",
+                      "length":  3479
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/assets/main.js",
+                      "sha256":  "3e07295b25eb27960f97f59af8d0b7f185c7cb901ddb9b6c73e4e4ef20d4e56a",
+                      "length":  2202
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/assets/style.css",
+                      "sha256":  "bc684ecde449e453ecb04f598a08ce653b169f226bd3583c0029771cf9e816fb",
+                      "length":  23367
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/assets/fonts/montserrat-600.woff2",
+                      "sha256":  "c26c8b74d570cc06f9790b21bc4a81c86ebbc63809c1ccd6f0a3d1e86fc68565",
+                      "length":  16336
+                  },
+                  {
+                      "path":  "iGaming_Templates_6_GreenLobby/assets/fonts/montserrat-800.woff2",
+                      "sha256":  "c57401a633ee4e7c292dbb634295076cd84b6dd95f498145876d03f24c971592",
+                      "length":  16692
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/README.md",
+                      "sha256":  "c8c65440ec8f09d05e36785d9158f6c72beac5c4b6b433a73f4723fd2e3c3e49",
+                      "length":  2469
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/NEW_SITE_BRIEF.md",
+                      "sha256":  "756ad6051f950c731b8a1f3ed90b8e54e18b20f127bfe6009a1b357e2685b5fd",
+                      "length":  1389
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/CLAUDE.md",
+                      "sha256":  "59943afa2b9a5291e872d3f34d697ed1184ffedf60c3a20eee73308db7629653",
+                      "length":  5767
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/images/src/README.txt",
+                      "sha256":  "8222314f18bc6054c3528b40732fe695d0dcd7887c6c9eb0c03247f274709476",
+                      "length":  436
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/build.py",
+                      "sha256":  "2fca221abe5e040179dec57e60ae0341965fbb8a2822efdbfa3c34b5f44bfc2f",
+                      "length":  39474
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/icons.py",
+                      "sha256":  "4743d1e04f288359b58918bbc24b9cdb24ffefc5c50a6e26d9efdb6b74548cda",
+                      "length":  4641
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/site_config.py",
+                      "sha256":  "5c0a4bdbb66e3fe6f0f91d41d74d3c516e6d6db09d9b3860cd40a2ee1f04c0b6",
+                      "length":  7367
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/posts.py",
+                      "sha256":  "05b0839ee3be6aa615054958b65327129e8a73699c2c9b39883400759c1c9fa9",
+                      "length":  31401
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/pages.py",
+                      "sha256":  "a3b0cccc828583cf5755a449b16e2760d0cb017905a407c98b9966100b35ed3d",
+                      "length":  38228
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/content.py",
+                      "sha256":  "c10ef4e51986e5a03079bb029008809d4025639824cbe4d33e1150e8108c2267",
+                      "length":  19344
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/build/images.py",
+                      "sha256":  "f22e73ad31a4673b6cc3c83f70b7125f6dfbb3d194ecfd45d89cdf41b502dc79",
+                      "length":  3279
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/assets/main.js",
+                      "sha256":  "e04301899fbe5675498612a2fa6dcfdf8efc01b8ec080b0ba0b664e89b950e39",
+                      "length":  2876
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/assets/style.css",
+                      "sha256":  "e53eb69e5e9e127451a07f22b74a888414ac1e54de21a73e9a59769e6373c3fb",
+                      "length":  25408
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/assets/fonts/outfit-800.woff2",
+                      "sha256":  "3dfc169d84444c367b11ea7ea37ea904be6d1363018d05f91172f7ada48005ce",
+                      "length":  14084
+                  },
+                  {
+                      "path":  "iGaming_Templates_7_GreenLobby/assets/fonts/outfit-600.woff2",
+                      "sha256":  "3736ab9f280abac079bb17ea654cf2c66fb4cf100f486c570a02d2bd6f933c96",
+                      "length":  14196
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/README.md",
+                      "sha256":  "b5b89bb304a62856b84d034cb1d3de46aab87debd06c2ce32ab991b6621eb276",
+                      "length":  2706
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/NEW_SITE_BRIEF.md",
+                      "sha256":  "7772d6bff02eb3f8e810fdbf5269708aaddf07b66b363450a71807f868cfb20c",
+                      "length":  1518
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/CLAUDE.md",
+                      "sha256":  "f739e2c839bcac44a15f6955f84833a43ec1af15c91fcfdf3a802f07560b0b1f",
+                      "length":  5544
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/images/src/README.txt",
+                      "sha256":  "e27551427b7f30f68f92ffb4fbcc534763def368387ab3f7552685fa03865577",
+                      "length":  398
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/build.py",
+                      "sha256":  "58d788cc8dbdb77fcbe92329127ea7641eb2ef5fd1436b40a8f20b50e32738c2",
+                      "length":  38993
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/icons.py",
+                      "sha256":  "59e2f8ff797144a46d36d395c85bcbb0982f6450480e523dfeeaff0ef7e09e59",
+                      "length":  4646
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/site_config.py",
+                      "sha256":  "39cc1d2c553b35acba79dfda9d5783bdde6222326dbed475aa41719e6f4dd517",
+                      "length":  6313
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/posts.py",
+                      "sha256":  "8bbb7083a4e9c25a54cb20a6ac569e14f77140589510b2ab51481caac28a002a",
+                      "length":  28074
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/pages.py",
+                      "sha256":  "35a6eea9691c37e4e485684b4408dfaf54da8f01bf19055d5083fa5499a5cf45",
+                      "length":  43023
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/content.py",
+                      "sha256":  "e7dc90b476949e8e22b766f74e014a6cb615d713dcac8438607caa6f3ec4a080",
+                      "length":  17617
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/build/images.py",
+                      "sha256":  "494009e6d6c723f0305edf399cf7c834c2c1c2cacdff360db609a0747560bc03",
+                      "length":  3683
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/assets/main.js",
+                      "sha256":  "12c75b642a289c3fd371dace37a72ed8ddac16310b4dfe78dbe2eb8a15df8019",
+                      "length":  993
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/assets/style.css",
+                      "sha256":  "65410b7bbe8d6f4e0d87d8ae9e0631ba02db17639d34e09d89f889c79d9ae137",
+                      "length":  23153
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/assets/fonts/lilita-400.woff2",
+                      "sha256":  "8d6cd0f298738a92ca9bf6e13f54a9191afd06ce04ea00ebbf24499c017191b7",
+                      "length":  10676
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/assets/fonts/outfit-800.woff2",
+                      "sha256":  "3dfc169d84444c367b11ea7ea37ea904be6d1363018d05f91172f7ada48005ce",
+                      "length":  14084
+                  },
+                  {
+                      "path":  "iGaming_Templates_8_RoyalVIP/assets/fonts/outfit-600.woff2",
+                      "sha256":  "3736ab9f280abac079bb17ea654cf2c66fb4cf100f486c570a02d2bd6f933c96",
+                      "length":  14196
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/README.md",
+                      "sha256":  "eb676eca909be8baca2951505a247b92c59309dc3e2a5cd9f0a8ff01cbfbd9a8",
+                      "length":  2436
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/NEW_SITE_BRIEF.md",
+                      "sha256":  "9ea49ba61b98595d0a10ff5c9377efb9bfa6f70eb1624e4e6f6a05acd7c9c2b5",
+                      "length":  1584
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/deploy.sh",
+                      "sha256":  "3eff6497da123d2ff193eb1beca611f6703eecdf4fac5ae204acddc3184c030d",
+                      "length":  1518
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/CLAUDE.md",
+                      "sha256":  "ee2a3a8d6cd4f1748cc7e3f5c14eb0806d0285fb37f93c6ab8baae9ee5cf4007",
+                      "length":  5534
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/images/src/README.txt",
+                      "sha256":  "c47d85468f97a5a85d8641ea3ae1888165d9ed53b5da6884e2f536958747d575",
+                      "length":  432
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/build.py",
+                      "sha256":  "e19dedb089f7a811ac924ed2cec8424004edee57f86d4fb66649e0bf9ca0a240",
+                      "length":  36344
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/icons.py",
+                      "sha256":  "07c2128dbffeb7d4196e6f38c3c586e1ec9550a42185358ae200e8d9b098211d",
+                      "length":  4628
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/site_config.py",
+                      "sha256":  "e385075e02fa6dbd31bfa8c8f5e23e9498bdd6d43589ead1266a4a00c46f8f55",
+                      "length":  5642
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/posts.py",
+                      "sha256":  "3f1e2e44b42f0dbda61bb8a92cdc23d196b699940e8422da5f110bf18ab9dd13",
+                      "length":  20011
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/pages.py",
+                      "sha256":  "3f77e93bac4b4fa480d3734faa059553e299524c02a7769333cb3731051f0d76",
+                      "length":  36332
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/content.py",
+                      "sha256":  "767090ed0a765a564763984c9e40dd094c0955c3c30796713373a7f3b480b7e0",
+                      "length":  16895
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/build/images.py",
+                      "sha256":  "c269688dd42fbbc94599028932e38cd01e03c11c7f2be0d9477cac0e47da8177",
+                      "length":  3291
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/assets/main.js",
+                      "sha256":  "12c75b642a289c3fd371dace37a72ed8ddac16310b4dfe78dbe2eb8a15df8019",
+                      "length":  993
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/assets/style.css",
+                      "sha256":  "8cff2c5274c6beba27b03d8fae5ab8c023092a43b7defe5acec55ba40e425e5e",
+                      "length":  16942
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/assets/fonts/lato-900.woff2",
+                      "sha256":  "bd9a6192274f8f2f3ce31cd3d2cae5ebe32e2fa86fc7c4f60a3c28556e496d56",
+                      "length":  13724
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/assets/fonts/lato-400.woff2",
+                      "sha256":  "d4ae5188a65370ecfe28f42293bbee8297cfd5712c6aadfdb270d48f2bcd88b0",
+                      "length":  13980
+                  },
+                  {
+                      "path":  "iGaming_Templates_9_FreeCredit/assets/fonts/lato-700.woff2",
+                      "sha256":  "7a7ce1a34f3e9944fe88fc61abbc93b6db383afa2b90815fd7ccea456fbce4e5",
+                      "length":  14168
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/README.md",
+                      "sha256":  "ef713f878ff2ed8bf6dc751e2c9e3bec456203acf4b57cafb489c9f032895531",
+                      "length":  2514
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/NEW_SITE_BRIEF.md",
+                      "sha256":  "b222db3435fd574e81bb8f0adf6fbb831733e5d6eb6c248ad94b6e48985b6cda",
+                      "length":  1510
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/CLAUDE.md",
+                      "sha256":  "20efc15eab5ed83c334ea20297744aaecd1cfc6d6e1acc7c43bd35278bfb1455",
+                      "length":  5591
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/images/src/README.txt",
+                      "sha256":  "e27551427b7f30f68f92ffb4fbcc534763def368387ab3f7552685fa03865577",
+                      "length":  398
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/build.py",
+                      "sha256":  "ffd90d582a6719ead95425b243712c04540f49dfc75df2cd3257d0489226ad8a",
+                      "length":  37665
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/icons.py",
+                      "sha256":  "16e5ac4e1166a2f3e43204d69cb5a167b1d2f6c62d419a89f623d8bbffaee501",
+                      "length":  4578
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/site_config.py",
+                      "sha256":  "cf7648e8b3840f92775912a8d125539cc224c089b83a6c2c90eba292b6c36420",
+                      "length":  4490
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/posts.py",
+                      "sha256":  "33a4d686e1639f0ede7f0d389787a7a73a98afa3c6cbd287b840da98e3098e4f",
+                      "length":  28439
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/pages.py",
+                      "sha256":  "4e853f30019de7543f1671cb4e2616f2f37ac85f20c86a1db22531256e1bf505",
+                      "length":  58715
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/content.py",
+                      "sha256":  "07ae1187dc5b1dd881c4322f2c6b27cb9bbeffde2d33d2b987b38e9066df96d6",
+                      "length":  22604
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/build/images.py",
+                      "sha256":  "f08c681bb745e900995d036ecf42f7c054e3ee28b50f13fa948a9c38b257fea0",
+                      "length":  3276
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/assets/main.js",
+                      "sha256":  "12c75b642a289c3fd371dace37a72ed8ddac16310b4dfe78dbe2eb8a15df8019",
+                      "length":  993
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/assets/style.css",
+                      "sha256":  "7958e87dc70b2c3767c61619902168b09d283cf9796fa12c665ec692fa6f4876",
+                      "length":  20262
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/assets/fonts/nunito-400.woff2",
+                      "sha256":  "f13006d8d98974499a90d13e567600ab3fd9f6f9a65d34ef715516025ac3837d",
+                      "length":  16368
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/assets/fonts/nunito-700.woff2",
+                      "sha256":  "5aafce4add473ede799b34788f2f9a8fb7c0a68c1b7e871ec5c56da82af897ec",
+                      "length":  16252
+                  },
+                  {
+                      "path":  "iGaming_Templates_10_RoseLounge/assets/fonts/nunito-800.woff2",
+                      "sha256":  "b42be94a8cf3d5fc7877216cdb8bbfb10d57291b06356b6f3b9e7fbf9742b8da",
+                      "length":  16508
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/README.md",
+                      "sha256":  "0fdd23b8f65dc86df98a36250a97e91fefe3cb116a8351140ba9bafa5e1e676c",
+                      "length":  2266
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/NEW_SITE_BRIEF.md",
+                      "sha256":  "f21dc37072d2311de066105ba45625aa788beff0744ad1b208975e8c2d0167b3",
+                      "length":  1439
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/CLAUDE.md",
+                      "sha256":  "6e790f8348058bb7390585abbaca85ba2946c64329b72cd775b630dea26bb943",
+                      "length":  5385
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/images/src/README.txt",
+                      "sha256":  "bd288daa8c1e785bdc05d57fca3b9c195e732dd6b0e84a1e7a16b8b3f4879ff3",
+                      "length":  450
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/build.py",
+                      "sha256":  "544dbf7849a933aa5d77c1b5d71ee98665cb44ac8e6ee4e3abd6b90f5b9b3fc4",
+                      "length":  38270
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/icons.py",
+                      "sha256":  "e12ef9d1665903b62f02e9938545e0dabfc85c1e465fb429ea65647c5a1de525",
+                      "length":  4571
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/site_config.py",
+                      "sha256":  "1538743d256e90857ab4f6b9956a53bfe55d595d3b2b5515b418c0cf3801c0b1",
+                      "length":  5438
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/posts.py",
+                      "sha256":  "1ef4560e50025274ce1ba585f2458df7d3278a9b007c015510fef0335fe21041",
+                      "length":  30569
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/pages.py",
+                      "sha256":  "083280090b0626e1d65ac1ba1e1f272c5f479259c796d5138cfbdb10569e7bad",
+                      "length":  59460
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/content.py",
+                      "sha256":  "8c01d7a7a46cd26b0161920b666a389555628d61a3204f83b31f891ba396f791",
+                      "length":  18494
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/build/images.py",
+                      "sha256":  "7424ccd3029ed707c8b14ee53f5e4670d2dc03976343c52558b12af36be04bd1",
+                      "length":  3187
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/assets/main.js",
+                      "sha256":  "2c0692fb7844acd7c4723c63f7a961fc6365d0be6bd9c23dfb795bd71136a976",
+                      "length":  2267
+                  },
+                  {
+                      "path":  "iGaming_Templates_11_NeonTeal/assets/style.css",
+                      "sha256":  "174980946d20c8900d6895dc457ae44d01f826d0792648e7289d893a979c0739",
+                      "length":  23259
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/README.md",
+                      "sha256":  "61c878a485b477d020fd22deb5c663885a2ba92f4fd3df8bc3f76b7611c2274a",
+                      "length":  1105
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/NEW_SITE_BRIEF.md",
+                      "sha256":  "92e150e7d853bcbeb46b3e1b8051a6b78389d40c1fc54b189cca6661ef9a9c8d",
+                      "length":  897
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/.gitignore",
+                      "sha256":  "ccde5538c2abbddf7983f0d1d5887abde8b8da821ab920c9706c820013473255",
+                      "length":  23
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/package-lock.json",
+                      "sha256":  "e3e6487feca386052d8099efb2b6ec2e23450764d7109c2656b51bef58011bf9",
+                      "length":  19551
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/package.json",
+                      "sha256":  "35f7c3f7475d3552c9b446add3984a770864b0bf95676b8fc33c4279bc75181c",
+                      "length":  400
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/deploy.sh",
+                      "sha256":  "80102a334da06ace8577a40a3e713cf552879d70fb6a271d00e6d27526d8cab0",
+                      "length":  975
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/static/_redirects",
+                      "sha256":  "87b9328a6bb3e6e7d819d7f14e23db6a2ec94c911d7f497e4400001389b39748",
+                      "length":  283
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/static/_headers",
+                      "sha256":  "386e2f658693363eb64244edafae75842c0d294468e498ac9e296bb565e3bbaa",
+                      "length":  708
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/static/assets/site.css",
+                      "sha256":  "05c2dae18f84961d6b0f4ecb2efe195614d28673c80d49e281af430ec5bfbcdb",
+                      "length":  20746
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/static/assets/site.js",
+                      "sha256":  "6f87d969d58c0c1bd7a56bc9f7dc737479596c0a3e1936426e6e862574791679",
+                      "length":  3017
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/scripts/serve.js",
+                      "sha256":  "aca2fc19da4bf0cf6e4255956fa33a8db306a49d50632dd0ab31fb878e90aaa8",
+                      "length":  1713
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/scripts/build.js",
+                      "sha256":  "0b5c5332eafad83fb01f977d6ebb9efca331a03497cbf6db3e2df004edf3e478",
+                      "length":  35610
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/scripts/check.js",
+                      "sha256":  "206f7a12a962bd87893dd7cd037eea53fcc5fc0585b51a958e9bd6cdb8865f8b",
+                      "length":  8241
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/scripts/inventory.js",
+                      "sha256":  "e4bcb9b04b28f25edfe2d3d8dbadc39c2592315dd8e550c36adffe19f03fca0c",
+                      "length":  1641
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/scripts/images.js",
+                      "sha256":  "587a325022ee0ca8db3c5a4826a6b7dfba5fc0953c51e7a4c67d674ffb994169",
+                      "length":  16978
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/games.js",
+                      "sha256":  "b13dff97e3a239d1a6a9d001d19dc2c56266c27f3edae384b27f9bfc263417d6",
+                      "length":  874
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/relationship.js",
+                      "sha256":  "bac7e5ebf721f9426f58044110946cc117845af8b5824d4d64d20f7397ff64a6",
+                      "length":  2433
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/config.js",
+                      "sha256":  "6c3100cf6b26609040309b816d484f193d969933af09bcfea067211e4e1f7ad4",
+                      "length":  2074
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/gallery.js",
+                      "sha256":  "69d781bd8f69cff2bef72260f8f5202efbf1b19a0e7614e0f1067e7fd226a2bd",
+                      "length":  408
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/inventory.js",
+                      "sha256":  "be2d37bfca9c35c13a310525758ca95320398128e8e9ad40c24fe8e6ed8df5a2",
+                      "length":  21025
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/pages.js",
+                      "sha256":  "590b625c4ba2d8c637ea4e12e971c3cdb236f6df49e88cceaada4c8246774126",
+                      "length":  18490
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/23.html",
+                      "sha256":  "1c2eccaec5518c568e0f42e06a4d1d6734a7b78012b969a285e1a343b21c7fc9",
+                      "length":  2190
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/19.html",
+                      "sha256":  "1953bdccbe2aa621aaa424e91ff036f90a11a0247af3ac593d8b360fcdca5947",
+                      "length":  5262
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/15.html",
+                      "sha256":  "de75bef0ef1fce3b404a1d1e85c1375fa9132da0e561013134781a50b7e683f3",
+                      "length":  4729
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/03.html",
+                      "sha256":  "b50589e2bb9508c7bf12da545f33a7553273b574a035d80c64faa2b73c994376",
+                      "length":  2330
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/02.html",
+                      "sha256":  "81a0c29a75b98e095f4070035193343ffd79cff73bf000bf2c60dcb28dce167a",
+                      "length":  2850
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/14.html",
+                      "sha256":  "9c057a4d8e29ffc4fa9c1887211a25acb464f685778faf4fa50afa7b0bee37c4",
+                      "length":  4746
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/18.html",
+                      "sha256":  "2865e1e495236b8997a78d78d73068ba6bb027f70ce468ca9b599dfb404bf724",
+                      "length":  4052
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/22.html",
+                      "sha256":  "c03a605d4f7ef5db78d85650969abd2cc48ee34604c0c5096e211cc6675a1ecd",
+                      "length":  5524
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/29.html",
+                      "sha256":  "3159a4510ab21ddd1746ed2e4b52cff8b394552b5bbe1e6bda7f881f9fc75783",
+                      "length":  6259
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/13.html",
+                      "sha256":  "772d9def8611b48dd3322849689e2e015ac82815fc251848d4330b460b5d8c78",
+                      "length":  4990
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/05.html",
+                      "sha256":  "3c8d0e1d7a79a3603d913cc3d1b6e746b3926374a5293ee3f4fd736a087635de",
+                      "length":  4560
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/25.html",
+                      "sha256":  "bbec9ba3b35f5cfa1156622e0b59b616a1c5c7b69998c8013c85cb86de51a6a7",
+                      "length":  2441
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/09.html",
+                      "sha256":  "d8ef7cccfe1abe017f70f8acaa755c39613c204dd42bee8adc91e4dc09894649",
+                      "length":  5421
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/08.html",
+                      "sha256":  "a62233ca02acb020065cfdf22d409413f19fadf6345b0df54b1ba0b6a03e6de0",
+                      "length":  5532
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/24.html",
+                      "sha256":  "404ca67996971eebb6c1cece506fed5995f1030eda202477e2138fe486775e23",
+                      "length":  5686
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/04.html",
+                      "sha256":  "2a735dcf4cd9ada519ee4fcdeebcf36abff3dfab123deb9847ac636e52167a71",
+                      "length":  5452
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/12.html",
+                      "sha256":  "cbf468f9a3192c85736ef1ece1681fefde63eee52ae5040fe42411898939b350",
+                      "length":  4949
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/28.html",
+                      "sha256":  "38930e840e3de6c56b16485542c593a33488a7c2bf5adc473cbfee45186abf2e",
+                      "length":  2559
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/07.html",
+                      "sha256":  "4e0fea1976fd005e9323f25c4c1f8098460285b9c2e67029a45cf9ceffe17953",
+                      "length":  5641
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/11.html",
+                      "sha256":  "bbfd89fb69e5cb97a48a4f5a149a8824694c7122c222b29c9c15edc4c0e3e7f4",
+                      "length":  6594
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/27.html",
+                      "sha256":  "877954b39ff7372ea48e5338a65e5f176946d2e9ca1d71c384654f580ff19c4a",
+                      "length":  5435
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/26.html",
+                      "sha256":  "5c6ec61e86f2a4136043ae5120f966dfab906f17dfee9821a6b0ca0a5fa562b6",
+                      "length":  2145
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/30.html",
+                      "sha256":  "80033b872f55afd76a6dcadc1dd1929f31d853a3c66878fd1541262930af0aa6",
+                      "length":  2543
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/10.html",
+                      "sha256":  "4f487f514b768e059cc44d916ce506267a2564855966db4f3b3653701c793921",
+                      "length":  6085
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/06.html",
+                      "sha256":  "444fba6a7a7d6b7548fac02951d1d7af2a8cc7e632668381f9e414690ab3cdd1",
+                      "length":  6423
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/21.html",
+                      "sha256":  "6e8f5345d9ab39410e57b66991a210dc36f6289d3c97d3fa73f5bfcbf530656e",
+                      "length":  3541
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/01.html",
+                      "sha256":  "a3d6c4cb45b2878f9c23668529b36ac0000e081138adbd812e65f249533f8c8d",
+                      "length":  6943
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/17.html",
+                      "sha256":  "fd1a2d500185e34f5a5acdd562c1aa727f44e71404e559650f295b68140bb0da",
+                      "length":  4179
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/16.html",
+                      "sha256":  "1f9e6ba3ec7f6448866f5ad206af7a3d8546913ec82ee5ba3d4d7728b063104b",
+                      "length":  6429
+                  },
+                  {
+                      "path":  "iGaming_Templates_12_RedGoldGuide/src/articles/20.html",
+                      "sha256":  "85de30af423949eca6db08f2b27d54cb8bfed550c4228bd8f828da99c10a7872",
+                      "length":  5021
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/_headers",
+                      "sha256":  "63c97880835434387827684fa36aa24b7c339c800d364dc8083fa655a5a89f48",
+                      "length":  168
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/README.md",
+                      "sha256":  "03ad8975942a65ec1a5307192a8068f097924d7fb445de3e379338e5cf47b153",
+                      "length":  2474
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/NEW_SITE_BRIEF.md",
+                      "sha256":  "f80a7850646293eb6169175120b864f0687af329873e6016c203ba551b2089ca",
+                      "length":  1530
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/deploy.sh",
+                      "sha256":  "715e3f3b955e53a2ccc9315b87c00e12c96433e46a05133edf8ccc862b913a90",
+                      "length":  1501
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/CLAUDE.md",
+                      "sha256":  "cebd27a41c709b1c983311fe4e551c966bfe1c42a73324877aa858a149376b9b",
+                      "length":  7694
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/images/src/README.txt",
+                      "sha256":  "e27551427b7f30f68f92ffb4fbcc534763def368387ab3f7552685fa03865577",
+                      "length":  398
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/build.py",
+                      "sha256":  "6c66cc6de5c69228c734f4ec12e7b59477e09510e344f2f75464ac38cc159410",
+                      "length":  42179
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/indexnow.py",
+                      "sha256":  "fbd76ef1b933bf021679a45aeddcfdd796480d8fa69ee0c69343e4171f50abc6",
+                      "length":  2434
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/icons.py",
+                      "sha256":  "a8627101d06f744c30e36a6e48a274cd541cf6f7f3b813b5b2b545ea0c27d3de",
+                      "length":  4571
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/site_config.py",
+                      "sha256":  "c9252ff1104466b60f9a294b7c91865ba6de7cf43d7ba72779396848840613bf",
+                      "length":  7775
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/posts.py",
+                      "sha256":  "a5603e1789b3fa9df743227ea7770bfd09fd039aef2642ed576d320a195714d9",
+                      "length":  28589
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/pages.py",
+                      "sha256":  "7b412dd92d28cee25371c66fafeb7dafa2adf74bc518dd8b787288c743b55ae9",
+                      "length":  45837
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/content.py",
+                      "sha256":  "0fb454962b6fc1e0d5f4f3c4801baae15f610c51dd37d13c8669a78e8a6edfa0",
+                      "length":  21290
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/custom_sections.py",
+                      "sha256":  "7d23704fad7eb638e2aa191d67ef3e4e05039a7c6b5a2b3928e9c17814465003",
+                      "length":  692
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/build/images.py",
+                      "sha256":  "d4af09666effbd2d5f5364615faf3c272cb73ffc0ea9475342a639f2ef802f99",
+                      "length":  3315
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/assets/main.js",
+                      "sha256":  "5fcb18d94f45b803d30a2fa430992555d6a0eeaa1fb01305ba4473b91a24492e",
+                      "length":  1703
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/assets/style.css",
+                      "sha256":  "49f75b248ec92a86d6d5e346911e8ea9aa5140d7c32651801d477fa991fa8cab",
+                      "length":  23245
+                  },
+                  {
+                      "path":  "iGaming_Templates_13_SkyGlow/assets/fonts/outfit-800.woff2",
+                      "sha256":  "3dfc169d84444c367b11ea7ea37ea904be6d1363018d05f91172f7ada48005ce",
+                      "length":  14084
+                  }
+              ],
+    "schema_version":  1,
+    "source_url":  "https://igaming-templates.vercel.app/downloads/iGaming_Templates_ALL.zip",
+    "directory":  "vendor/templates/library/bundle-d78393666c6b",
+    "archive_path":  "vendor/templates/catalog-all.zip"
+}

@@ -1,0 +1,4 @@
+# Direct 301 redirects for changed published URLs. One rule per line:
+#   /old-path/  /new-path/  301
+# Always point to the final URL (no chains), and update internal links and the sitemap too.
+# Host redirects (http → https, www → apex) are configured at the hosting/DNS level.

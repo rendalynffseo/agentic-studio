@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "fallback_template_id": "t2",
+  "description": "Layout and visual-fit heuristics. Scores are not SEO, CTR, safety, or performance predictions. Starter content is replaced according to the approved brief.",
+  "profiles": [
+    {"id":"t1","site_types":["landing","campaign"],"layout":["single page","hero","tiles"],"palette":["red","gold"],"signals":{"landing page":10,"campaign":9,"one page":8,"red gold":10,"red":2}},
+    {"id":"t2","site_types":["guide","documentation","review"],"layout":["sidebar","article","contents"],"palette":["ink","gold","dark"],"signals":{"app guide":15,"permissions":12,"android":5,"guide":7,"documentation":9,"review":5,"article":3}},
+    {"id":"t3","site_types":["catalog","directory"],"layout":["sidebar","portrait cards","rows"],"palette":["navy"],"signals":{"portrait cards":15,"sidebar catalog":13,"catalog":5,"sidebar":4,"navy":3,"directory":3}},
+    {"id":"t4","site_types":["portal","blog"],"layout":["categories","banner","grid"],"palette":["orange","light"],"signals":{"orange":13,"portal":9,"category pages":9,"categories":4,"light":2}},
+    {"id":"t5","site_types":["landing","magazine"],"layout":["carousel","section chips","cards"],"palette":["teal","gold","dark"],"signals":{"teal gold":15,"section chips":12,"carousel":8,"gradient":5,"teal":4}},
+    {"id":"t6","site_types":["directory","portal"],"layout":["navigation","tabs","cards"],"palette":["green","yellow"],"signals":{"green yellow":18,"yellow directory":12,"directory":6,"green":3,"yellow":4}},
+    {"id":"t7","site_types":["dashboard","workspace"],"layout":["three column","search","tabs"],"palette":["green","gold","dark"],"signals":{"dashboard":19,"workspace":11,"three column":14,"search":4,"green":3}},
+    {"id":"t8","site_types":["portal","catalog"],"layout":["tabs","tiles","table"],"palette":["purple","white","gold"],"signals":{"purple":20,"royal":12,"white":6,"tabs":3}},
+    {"id":"t9","site_types":["portal","comparison"],"layout":["tables","provider grid","banner"],"palette":["charcoal","yellow"],"signals":{"charcoal":19,"yellow tables":16,"table":7,"comparison":4,"yellow":3}},
+    {"id":"t10","site_types":["magazine","portal"],"layout":["bands","cards","faq"],"palette":["rose","cream","maroon"],"signals":{"rose":20,"maroon":17,"cream":14,"lounge":5}},
+    {"id":"t11","site_types":["portal","comparison"],"layout":["comparison","grid","carousel"],"palette":["neon teal","navy","dark"],"signals":{"neon":17,"neon teal":15,"navy teal":12,"teal":5,"comparison":5,"grid":3}},
+    {"id":"t12","site_types":["guide","blog","education"],"layout":["searchable blog","article","clusters"],"palette":["red","black","gold"],"signals":{"searchable blog":20,"red black":17,"educational":9,"article":6,"guide":3,"red":5}},
+    {"id":"t13","site_types":["knowledge base","glossary"],"layout":["glossary","comparison","cards"],"palette":["sky blue","navy"],"signals":{"glossary":22,"sky blue":20,"knowledge base":12,"sky":8,"blue":5}}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "eu9slots-com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/images.js",
+    "build": "node scripts/build.js",
+    "build:prod": "SITE_ENV=production node scripts/build.js",
+    "serve": "node scripts/serve.js",
+    "check": "node scripts/check.js",
+    "inventory": "node scripts/inventory.js"
+  },
+  "devDependencies": {
+    "sharp": "0.34.3"
+  }
+}

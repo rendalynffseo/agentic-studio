@@ -1,0 +1,18 @@
+{
+  "stage_id": "01",
+  "agent": "queue-agent",
+  "summary": "Describe the completed work.",
+  "decisions": [],
+  "assumptions": [],
+  "sources": [],
+  "outputs": ["artifacts/intake-notes.md"],
+  "checks": [
+    {
+      "name": "Brief contains a usable business, audience, offer, and conversion goal",
+      "passed": true,
+      "evidence": "artifacts/intake-notes.md"
+    }
+  ],
+  "limitations": [],
+  "handoff": "State the exact inputs and next action for the following agent."
+}

@@ -1,0 +1,7 @@
+{
+  "content_mode": "hybrid",
+  "content_blocks": [
+    {"id":"hero-heading","label":"Hero heading","text":"Clear answers for curious readers.","preserve_exact":true,"placement":{"page":"auto","section":"auto"}},
+    {"id":"about-copy","label":"About us","text":"We explain useful ideas in plain language.\nEvery guide starts with a question worth asking.","preserve_exact":true,"placement":{"page":"/about/","section":"about"}}
+  ]
+}

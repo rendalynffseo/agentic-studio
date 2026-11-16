@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+# Template checksums cover original bytes; never normalize imported files.
+vendor/** -text

@@ -1,0 +1,28 @@
+__pycache__/
+jobs/
+Agentic Studio.exe
+desktop-preview.png
+desktop/self-test-result.txt
+desktop/error.log
+desktop/brief-*.json
+Agentic Studio.preview.exe
+desktop/ui-test-result.txt
+desktop/scene-test-result.txt
+desktop/content-*.json
+desktop/content-ui-test-result.txt
+Agentic Studio.content-preview.exe
+Agentic Studio.previous-*.exe
+
+# Local sites, secrets, and generated output
+sites/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+*.tmp
+scripts/apply-template-policy.mjs
+scripts/authorize-task-deployment.mjs
+scripts/record-deployed-task.mjs
+scripts/record-template-development.mjs
+scripts/record-template-stage.mjs

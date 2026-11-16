@@ -1,0 +1,7 @@
+{
+  "name": "agentic-workflow-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {"start": "node dashboard-server.mjs", "test": "node --test workflow.test.mjs dashboard.test.mjs template-selection.test.mjs user-content.test.mjs", "templates": "node scripts/template-agent.mjs list"},
+  "engines": {"node": ">=18"}
+}
