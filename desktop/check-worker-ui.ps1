@@ -23,11 +23,13 @@ if (-not $panel) { throw 'Native AI worker window did not open.' }
 $ready = $false
 do {
     $texts = $panel.FindAll([System.Windows.Automation.TreeScope]::Descendants, [System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::ControlTypeProperty, [System.Windows.Automation.ControlType]::Text))
-    foreach ($text in $texts) { if ($text.Current.Name -like 'Signed in. Ready to run without VS Code.*') { $ready = $true } }
+    foreach ($text in $texts) { if ($text.Current.Name -like 'Connected - your account is ready.*') { $ready = $true } }
     if (-not $ready) { Start-Sleep -Milliseconds 200 }
 } until ($ready -or (Get-Date) -gt $deadline)
 if (-not $ready) { throw 'The native worker did not confirm the signed-in account.' }
-foreach ($label in @('Start / continue', 'Pause after current agent', 'Stop worker', 'Sign in', 'Choose engine', 'Check connection', 'Recover interrupted stage', 'AI worker live log')) {
+$advanced = $panel.FindFirst([System.Windows.Automation.TreeScope]::Descendants, [System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty, 'Advanced settings & recovery'))
+if ($advanced) { $advanced.GetCurrentPattern([System.Windows.Automation.ExpandCollapsePattern]::Pattern).Expand() }
+foreach ($label in @('Start / continue', 'Pause after current agent', 'Stop worker', 'Choose engine', 'Check connection', 'Recover interrupted stage', 'AI worker live log')) {
     $element = $panel.FindFirst([System.Windows.Automation.TreeScope]::Descendants, [System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty, $label))
     if (-not $element) { throw ('Missing native worker control: ' + $label) }
 }
