@@ -32,12 +32,13 @@ function render(job) {
   $('attention-text').textContent = next?.failure || (next?.status === 'running' ? 'Progress updates will appear as the agent saves its work and completes the stage.' : next ? 'The queue is ready. Ask your coding agent to continue this job using ORCHESTRATOR.md.' : 'Review the release status and measurement plan in your deliverables.');
   $('attention-action').textContent = next?.id === '01' ? 'Complete brief ↗' : 'View pipeline ↗';
   $('attention-action').href = next?.id === '01' ? '#brief' : '#pipeline';
-  $('next-title').textContent = next ? descriptions[Number(next.id) - 1][0] : 'Review your results';
+  $('next-title').textContent = next ? (next.title || descriptions[Number(next.id) - 1]?.[0] || next.agent) : 'Review your results';
   $('next-description').textContent = next ? `${next.agent} · ${next.status === 'failed' ? 'Waiting for required information or a fix.' : next.status === 'running' ? 'Task is claimed in the queue.' : 'Waiting to be claimed by the agent runner.'}` : 'Check the saved evidence and plan your next improvement cycle.';
   $('retry').disabled = busy || next?.status !== 'failed';
   const stages = $('stages'); stages.replaceChildren();
   for (const task of tasks) {
-    const [title, description] = descriptions[Number(task.id) - 1];
+    const [oldTitle, oldDescription] = descriptions[Number(task.id) - 1] || [];
+    const title=task.title||oldTitle||task.agent, description=task.responsibility||oldDescription||'Read assigned role instructions.';
     const row = node('div', `stage ${task.status}`), text = node('div');
     text.append(node('h3', '', title), node('p', '', description));
     row.append(node('span', 'stage-icon', task.status === 'done' ? '✓' : task.status === 'failed' ? '!' : task.id), text, node('span', 'stage-status', {pending: 'Queued', failed: 'Needs input', running: 'Running', done: 'Complete'}[task.status]));

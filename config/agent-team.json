@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "agents": [
+    {
+      "id": "01",
+      "agent": "queue-agent",
+      "title": "Intake agent",
+      "station": "dock",
+      "responsibility": "Clarify the user brief and collect the inputs required to begin.",
+      "instructions": "Normalize scope, audience, assets, source access, and unresolved questions.",
+      "instruction_file": "agents/instructions/queue-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "02",
+      "agent": "planning-agent",
+      "title": "Planning agent",
+      "station": "planning",
+      "responsibility": "Turn the approved brief into an ordered delivery plan.",
+      "instructions": "Define deliverables, dependencies, acceptance checks, and work boundaries.",
+      "instruction_file": "agents/instructions/planning-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "12",
+      "agent": "template-selection-agent",
+      "title": "Template selection agent",
+      "station": "planning",
+      "responsibility": "Choose the best-fitting installed template and document the choice.",
+      "instructions": "Review all catalog profiles, honor user pins, run template-agent choose, and record visual-fit reasons.",
+      "instruction_file": "agents/instructions/template-selection-agent.md",
+      "required_outputs": [
+        "artifacts/template-review.md"
+      ],
+      "condition": "always"
+    },
+    {
+      "id": "03",
+      "agent": "setup-agent",
+      "title": "Setup agent",
+      "station": "planning",
+      "responsibility": "Prepare editable source, tooling, and a reproducible preview.",
+      "instructions": "Inspect the project, prepare selected source, record build/preview commands and deployment boundaries.",
+      "instruction_file": "agents/instructions/setup-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "04",
+      "agent": "research-agent",
+      "title": "Research agent",
+      "station": "research",
+      "responsibility": "Research search intent and verify factual claims with current sources.",
+      "instructions": "Save observed queries, dated sources, useful coverage gaps, and research limitations.",
+      "instruction_file": "agents/instructions/research-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "05",
+      "agent": "architecture-agent",
+      "title": "Site architecture agent",
+      "station": "research",
+      "responsibility": "Map pages, navigation, routes, and internal links.",
+      "instructions": "Assign distinct intent per page and reconcile existing routes without replacing unrelated pages.",
+      "instruction_file": "agents/instructions/architecture-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "13",
+      "agent": "blog-planning-agent",
+      "title": "Blog strategy agent",
+      "station": "research",
+      "responsibility": "Assign one researched topic and route to each requested blog post.",
+      "instructions": "Follow BLOG-WORKFLOW.md; save the requested post count with distinct intent, slugs and internal links.",
+      "instruction_file": "agents/instructions/blog-planning-agent.md",
+      "required_outputs": [
+        "artifacts/blog-plan.json"
+      ],
+      "condition": "blog"
+    },
+    {
+      "id": "14",
+      "agent": "content-placement-agent",
+      "title": "Content placement agent",
+      "station": "work",
+      "responsibility": "Place user-supplied content without changing its wording.",
+      "instructions": "Prepare user content and write a complete validated placement map honoring pinned locations.",
+      "instruction_file": "agents/instructions/content-placement-agent.md",
+      "required_outputs": [
+        "artifacts/content-placement.json"
+      ],
+      "condition": "content"
+    },
+    {
+      "id": "06",
+      "agent": "content-agent",
+      "title": "Website copy agent",
+      "station": "work",
+      "responsibility": "Write website copy and search snippets around approved source content.",
+      "instructions": "Honor provided/hybrid mode and write page copy, metadata, and factual claim notes.",
+      "instruction_file": "agents/instructions/content-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "15",
+      "agent": "blog-writing-agent",
+      "title": "Blog writing agent",
+      "station": "work",
+      "responsibility": "Write complete articles from the approved blog plan.",
+      "instructions": "Follow BLOG-WORKFLOW.md; save finished article drafts, metadata, sources, and internal links.",
+      "instruction_file": "agents/instructions/blog-writing-agent.md",
+      "required_outputs": [
+        "artifacts/blog-drafts.md"
+      ],
+      "condition": "blog"
+    },
+    {
+      "id": "16",
+      "agent": "affiliate-agent",
+      "title": "Affiliate placement agent",
+      "station": "work",
+      "responsibility": "Plan each supplied affiliate destination and its relevant CTA.",
+      "instructions": "Follow AFFILIATE-LINKS.md; preserve URLs and tracking parameters and specify labels, disclosure and placements.",
+      "instruction_file": "agents/instructions/affiliate-agent.md",
+      "required_outputs": [
+        "artifacts/affiliate-plan.json"
+      ],
+      "condition": "affiliate"
+    },
+    {
+      "id": "17",
+      "agent": "design-agent",
+      "title": "UI design agent",
+      "station": "work",
+      "responsibility": "Adapt the selected template to the approved page and content plans.",
+      "instructions": "Read actual template source; save responsive layout, accessible interaction and adaptation decisions.",
+      "instruction_file": "agents/instructions/design-agent.md",
+      "required_outputs": [
+        "artifacts/design-plan.md"
+      ],
+      "condition": "always"
+    },
+    {
+      "id": "07",
+      "agent": "development-agent",
+      "title": "Development agent",
+      "station": "work",
+      "responsibility": "Build the actual responsive pages, posts, and approved CTAs.",
+      "instructions": "Implement prior handoffs; run builds and preserve exact copy, template provenance, and affiliate destinations.",
+      "instruction_file": "agents/instructions/development-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "08",
+      "agent": "technical-seo-agent",
+      "title": "Technical SEO agent",
+      "station": "review",
+      "responsibility": "Check crawlability, metadata, canonicals, sitemap, and structured data.",
+      "instructions": "Inspect actual output and save evidence; do not equate local checks with indexing.",
+      "instruction_file": "agents/instructions/technical-seo-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "18",
+      "agent": "accessibility-agent",
+      "title": "Accessibility agent",
+      "station": "review",
+      "responsibility": "Check keyboard use, labels, contrast, and mobile layouts.",
+      "instructions": "Inspect actual pages; fix or report reproducible accessibility and responsive defects.",
+      "instruction_file": "agents/instructions/accessibility-agent.md",
+      "required_outputs": [
+        "artifacts/accessibility-review.md"
+      ],
+      "condition": "always"
+    },
+    {
+      "id": "09",
+      "agent": "qa-agent",
+      "title": "QA agent",
+      "station": "review",
+      "responsibility": "Independently verify deliverables and the finished site.",
+      "instructions": "Check real pages, interactions, requested blog count, affiliate destinations, supplied copy, and handoff evidence.",
+      "instruction_file": "agents/instructions/qa-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "10",
+      "agent": "release-agent",
+      "title": "Release agent",
+      "station": "complete",
+      "responsibility": "Prepare release readiness or execute an authorized deployment.",
+      "instructions": "Respect deployment authorization; distinguish drafts, previews and verified published output.",
+      "instruction_file": "agents/instructions/release-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    },
+    {
+      "id": "11",
+      "agent": "measurement-agent",
+      "title": "Measurement agent",
+      "station": "complete",
+      "responsibility": "Record actual performance and plan evidence-based improvements.",
+      "instructions": "Record available metrics or a collection plan with owner, baseline, window, and follow-up date.",
+      "instruction_file": "agents/instructions/measurement-agent.md",
+      "required_outputs": [],
+      "condition": "always"
+    }
+  ]
+}

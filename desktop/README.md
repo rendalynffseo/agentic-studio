@@ -6,6 +6,10 @@ Keep the executable in this workspace: it uses the adjacent queue scripts, `desk
 
 ## Use the room
 
+New tasks use a specialist team with one assigned worker per role: 14 core agents and up to four optional agents for blog strategy, blog writing, affiliate placement, and exact-content placement. Open **Agent team** for individual responsibilities, instructions, status, and handoff recipients. **Copy this agent task** gives the next worker its inputs, required outputs and commands. The external coding agent runner performs the work; the desktop does not launch model processes.
+
+Each assigned role has its own robot. Optional roles absent from the task are hidden. Only the role with a real running queue task shows working activity. Existing queued tasks offer **Use specialist team** before execution begins; active and completed tasks keep their existing assignments.
+
 New tasks automatically choose from all 13 installed source templates. The choice appears as a **TEMPLATE SELECTED** event and `template-selection.json` deliverable. Include your preferred palette or layout in the task instructions to guide the selection. The planning agent reviews the choice before development. This behavior is supplied by the queue script, so the existing desktop executable picks it up without a rebuild.
 
 ### Move around

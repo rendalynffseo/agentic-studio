@@ -26,7 +26,7 @@ test('dashboard serves actual queue and restricts mutations and file access', as
     assert.ok(Array.isArray(jobs.jobs));
     const job = jobs.jobs.find(j => j.id === 'first-site');
     assert.ok(job);
-    assert.equal(job.tasks.length, 11);
+    assert.equal(job.tasks.length, 14);
     assert.ok(job.events.some(event => event.action === 'fail'));
     assert.equal((await fetch(origin + '/api/jobs/first-site/retry', {method: 'POST', body: '{}'})).status, 403);
     const {token} = await (await fetch(origin + '/api/session')).json();

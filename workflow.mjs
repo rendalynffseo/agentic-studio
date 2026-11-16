@@ -6,7 +6,7 @@ import crypto from 'node:crypto';
 import {recommendTemplate,applySelectionToBrief,loadTemplateLibrary} from './lib/template-selection.mjs';
 import {normalizeUserContent,activeUserContent,prepareUserContent,validatePlacementMap,verifyUserContent,saveUserContent} from './lib/user-content.mjs';
 
-const roles = ['queue', 'planning', 'setup', 'research', 'architecture', 'content', 'development', 'technical-seo', 'qa', 'release', 'measurement'];
+import {teamTasks,agentPrompt} from './lib/agent-team.mjs';
 const now = () => new Date().toISOString();
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
 function save(file, value) {
@@ -37,6 +37,7 @@ function validate(job, task) {
     requireThat(check.passed === true, `Check has not passed: ${check.name}`);
     requireThat(evidence(job, check.evidence) !== file, 'Checks need substantive saved evidence');
   }
+  for(const required of task.required_outputs||[]){requireThat(data.outputs.includes(required),`Include required role output: ${required}`);evidence(job,required);}
   const brief = read(path.join(job, 'brief.json'));
   if (['06','07','09'].includes(task.id) && activeUserContent(brief).length) {
     requireThat(data.user_content, 'Supplied content needs source and placement evidence');
@@ -82,9 +83,9 @@ function validate(job, task) {
 
 export function run(argv) {
   const [command, ...rest] = argv;
-  const allowed = {init: ['brief'], status: [], next: [], claim: ['agent'], complete: ['agent'], fail: ['agent', 'reason'], retry: [], reopen: ['stage', 'reason'], 'set-content':['input']};
+  const allowed = {init: ['brief'], status: [], next: [], claim: ['agent'], complete: ['agent'], fail: ['agent', 'reason'], retry: [], reopen: ['stage', 'reason'], 'set-content':['input'], 'agent-prompt':['agent'], 'upgrade-team':[]};
   if (!command || command === '--help') {
-    console.log('node workflow.mjs <init|status|next|claim|complete|fail|retry|reopen|set-content> --job <directory>\ninit: --brief <json>\nclaim/complete/fail: --agent <name>\nfail/reopen: --reason <text>\nreopen: --stage <01..11>\nset-content: --input <content JSON>');
+    console.log('node workflow.mjs <init|status|next|claim|complete|fail|retry|reopen|set-content|agent-prompt|upgrade-team> --job <directory>\ninit: --brief <json>\nclaim/complete/fail: --agent <name>\nfail/reopen: --reason <text>\nreopen: --stage <task ID from state.json>\nset-content: --input <content JSON>');
     return;
   }
   requireThat(Object.hasOwn(allowed, command), 'Unknown command');
@@ -100,6 +101,7 @@ export function run(argv) {
   const stateFile = path.join(job, 'state.json');
   if (command === 'init') {
     const brief = read(args.brief);
+    requireThat(!brief.workflow_team||['classic','specialist'].includes(brief.workflow_team),'workflow_team must be classic or specialist');
     requireThat(brief && typeof brief.project_name === 'string' && brief.project_name.trim() && typeof brief.request === 'string' && brief.request.trim(), 'Brief needs project_name and request');
     requireThat(!fs.existsSync(job) || fs.readdirSync(job).length === 0, 'Use a new or empty job directory');
     const selection = recommendTemplate(brief);
@@ -108,15 +110,20 @@ export function run(argv) {
     save(path.join(job, 'brief.json'), selectedBrief);
     save(path.join(job, 'artifacts/template-selection.json'), selection);
     prepareUserContent(job, selectedBrief);
-    save(stateFile, {version: 1, project_name: brief.project_name, created_at: now(), tasks: roles.map((role, i) => {
-      const id = String(i + 1).padStart(2, '0');
-      return {id, agent: role + '-agent', status: 'pending', attempts: 0, artifact: `artifacts/${id}-${role}.json`};
-    }), design_selection: {template_id:selection.template_id,name:selection.template_name,mode:selection.mode,reason:selection.reason,artifact:'artifacts/template-selection.json'}, events: [{at:now(),action:'template_selected',stage:'02',reason:`${selection.template_id} — ${selection.template_name}: ${selection.reason}`} ]});
+    save(stateFile, {version: 1, project_name: brief.project_name, created_at: now(), workflow_team: brief.workflow_team||'classic', tasks: teamTasks(selectedBrief), design_selection: {template_id:selection.template_id,name:selection.template_name,mode:selection.mode,reason:selection.reason,artifact:'artifacts/template-selection.json'}, events: [{at:now(),action:'template_selected',stage:'02',reason:`${selection.template_id} — ${selection.template_name}: ${selection.reason}`} ]});
     console.log(`Created ${job}; read ORCHESTRATOR.md before executing tasks.`);
     return;
   }
   if (command === 'set-content') { console.log(JSON.stringify(saveUserContent(job, read(args.input)),null,2)); return; }
   const state = read(stateFile);
+  if(command==='agent-prompt'){console.log(agentPrompt(job,state,args.agent));return;}
+  if(command==='upgrade-team'){
+    requireThat(!state.tasks.some(t=>['running','done'].includes(t.status)), 'Upgrade only before execution starts; create a new task for work already in progress');
+    const brief=read(path.join(job,'brief.json'));brief.workflow_team='specialist';
+    const old=new Map(state.tasks.map(t=>[t.agent,t]));state.tasks=teamTasks(brief).map(t=>({...t,...(old.get(t.agent)||{}),title:t.title,station:t.station,responsibility:t.responsibility,instruction_file:t.instruction_file,required_outputs:t.required_outputs}));
+    state.workflow_team='specialist';state.events.push({at:now(),action:'team_upgraded',stage:'01',reason:'Assigned one dedicated agent per workflow role'});
+    save(path.join(job,'brief.json'),brief);save(stateFile,state);console.log(JSON.stringify({agents:state.tasks.length,workflow_team:'specialist'}));return;
+  }
   let task = state.tasks.find(t => t.status !== 'done');
   if (command === 'status') {
     console.log(`Project: ${state.project_name}`);
@@ -126,8 +133,8 @@ export function run(argv) {
   if (command === 'next') { console.log(JSON.stringify(task ?? {status: 'complete'}, null, 2)); return; }
   if (command === 'reopen') {
     task = state.tasks.find(t => t.id === args.stage);
-    requireThat(task, 'Unknown stage; use 01 through 11');
-    for (const item of state.tasks.filter(t => Number(t.id) >= Number(args.stage))) {
+    requireThat(task, 'Unknown stage; use a task ID from state.json');
+    for (const item of state.tasks.slice(state.tasks.indexOf(task))) {
       item.status = 'pending';
       for (const key of ['started_at', 'completed_at', 'failure']) delete item[key];
     }

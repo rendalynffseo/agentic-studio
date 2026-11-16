@@ -37,5 +37,6 @@
   "blog_enabled": false,
   "blog_topics": "",
   "blog_post_count": 3,
-  "blog_path": "/blog/"
+  "blog_path": "/blog/",
+  "workflow_team": "specialist"
 }

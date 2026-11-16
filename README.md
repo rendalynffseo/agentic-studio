@@ -10,6 +10,10 @@ Install Node.js 18 or newer and run `npm test`; no npm install is needed. On Win
 
 ## Start here
 
+**Agent team:** new desktop tasks assign one agent per role. There are 14 core agents and four optional specialists, for up to 18 agents per task. Open **Agent team** to see responsibilities, status, instructions, and who receives each handoff. **Copy this agent task** prepares the next agent's assignment. Blog and affiliate agents are included when those features are requested; exact-content placement is included for supplied-copy tasks. The coding agent runner executes the roles.
+
+Existing queued tasks can use **Use specialist team** before work starts. Active/completed queues retain their assignments. CLI users select `workflow_team: "specialist"` in the brief, or retain `"classic"` for the original 11-role sequence. Task IDs are stable; the saved task array defines execution order and the desktop displays consecutive agent numbers.
+
 After creating a desktop task, the **Start your task** dialog opens automatically. Click **Copy task instructions**, paste into your coding agent with this workspace open, and send. The inspector's **Start / continue task** button reopens these instructions. The desktop tracks real queue updates; copying instructions alone does not launch a worker.
 
 **Affiliate links:** enter the destination, button text, and placement in New task or Edit brief. Use `auto` for the agent to select relevant CTA locations. See [affiliate placement instructions](templates/AFFILIATE-LINKS.md).

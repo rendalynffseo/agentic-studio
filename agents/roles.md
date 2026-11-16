@@ -1,5 +1,7 @@
 # Agent roles
 
+The specialist roster is `config/agent-team.json`; every agent has an individual instruction file under `agents/instructions/`. Specialist tasks add template selection, blog strategy, blog writing, exact-content placement, affiliate placement, UI design, and accessibility roles around the original roles below. Read state.json for execution order and the actual stage ID. Original numeric IDs remain stable and do not define the expanded team's order.
+
 Each role receives the user brief and all prior deliverables. Save substantive work as files, then use the common JSON handoff contract. The checks below are mandatory role acceptance criteria; add project-specific checks from planning. A check that cannot be executed is not a pass. For nonblocking limitations, explain why the stage's actual completion condition remains met.
 
 ## 01 — queue-agent: Intake and queue

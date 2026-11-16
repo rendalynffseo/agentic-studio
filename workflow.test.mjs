@@ -16,7 +16,9 @@ test('sequential handoffs, evidence gates, retry, reopen, and full completion', 
     return result.stdout;
   }
   const state = () => JSON.parse(fs.readFileSync(path.join(job, 'state.json'), 'utf8'));
-  cli('init', ['--brief', path.join(root, 'templates/brief.json')]);
+  const classicBrief=path.join(path.dirname(job),'classic-brief.json');
+  fs.writeFileSync(classicBrief,JSON.stringify({...JSON.parse(fs.readFileSync(path.join(root,'templates/brief.json'),'utf8')),workflow_team:'classic'}));
+  cli('init', ['--brief', classicBrief]);
   cli('init', ['--brief', path.join(root, 'templates/brief.json')], false);
   cli('claim', ['--agent', 'planning-agent'], false);
   cli('complete', ['--agent', 'queue-agent'], false);

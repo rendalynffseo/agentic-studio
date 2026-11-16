@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.IO;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
@@ -35,7 +37,8 @@ namespace AgenticStudio {
         public event Action ViewChanged;
         public event Action<string> StationSelected;
         sealed class AgentActor {
-            public string Station,State="pending";
+            public string Station,Agent,State="pending";
+            public readonly ScaleTransform3D VisibilityScale=new ScaleTransform3D(1.2,1.2,1.2);
             public double HomeX,HomeZ,WorkX,WorkZ,BaseY,X,Z,Phase,Heading;
             public TranslateTransform3D Position=new TranslateTransform3D(),Bob=new TranslateTransform3D();
             public AxisAngleRotation3D Facing=new AxisAngleRotation3D(new Vector3D(0,1,0),0),Head=new AxisAngleRotation3D(new Vector3D(0,1,0),0),LeftArm=new AxisAngleRotation3D(new Vector3D(1,0,0),0),RightArm=new AxisAngleRotation3D(new Vector3D(1,0,0),0),LeftLeg=new AxisAngleRotation3D(new Vector3D(1,0,0),0),RightLeg=new AxisAngleRotation3D(new Vector3D(1,0,0),0);
@@ -61,12 +64,12 @@ namespace AgenticStudio {
             Corridor(-6,0,0,0); Corridor(0,-6,0,0); Corridor(6,0,0,0); Corridor(4.5,6.2,0,0); Corridor(-4.5,6.2,0,0);
             Room(-6,0,0); Room(0,-6,1); Room(6,0,2); Room(4.5,6.2,3); Room(-4.5,6.2,4);
             Hub();
-            Robot("dock",-6,1.35,-6.95,-.55,0);
-            Robot("planning",1.5,1.2,1.15,1.25,.55);
-            Robot("research",1.25,-5.3,.8,-6.55,0);
-            Robot("review",7.45,.85,6.8,-.55,0);
-            Robot("work",4.15,7.75,4.2,7.4,0);
-            Robot("complete",-4.7,7.7,-4.5,7.55,0);
+            Robots("dock",-6,1.35,-6.95,-.55,0);
+            Robots("planning",1.5,1.2,1.15,1.25,.55);
+            Robots("research",1.25,-5.3,.8,-6.55,0);
+            Robots("review",7.45,.85,6.8,-.55,0);
+            Robots("work",4.15,7.75,4.2,7.4,0);
+            Robots("complete",-4.7,7.7,-4.5,7.55,0);
             AddLabel("dock", "01", "Dock", new Point3D(-6,1.2,1.4));
             AddLabel("planning", "02", "Planning", new Point3D(0,4.5,0));
             AddLabel("research", "03", "Research", new Point3D(0,1.5,-6));
@@ -169,9 +172,13 @@ namespace AgenticStudio {
         void Part(Model3DGroup parent,Transform3D transform,Action geometry) {
             var previous=meshTarget;var group=new Model3DGroup{Transform=transform};parent.Children.Add(group);meshTarget=group;geometry();meshTarget=previous;
         }
-        void Robot(string station,double x,double z,double workX,double workZ,double baseY) {
-            var actor=new AgentActor{Station=station,HomeX=x,HomeZ=z,WorkX=workX,WorkZ=workZ,BaseY=baseY,X=x,Z=z,Phase=actors.Count*1.37};actors.Add(actor);
-            var root=new Model3DGroup();var transform=new Transform3DGroup();transform.Children.Add(new ScaleTransform3D(1.2,1.2,1.2));transform.Children.Add(new RotateTransform3D(actor.Facing));transform.Children.Add(actor.Position);root.Transform=transform;world.Children.Add(root);
+        void Robots(string station,double x,double z,double workX,double workZ,double baseY){
+            var profiles=Data.Rows(Data.Read(Path.Combine(Data.Root,"config","agent-team.json")),"agents").Where(a=>Data.Get(a,"station")==station).ToList();
+            for(int i=0;i<profiles.Count;i++){double offset=(i-(profiles.Count-1)/2.0)*.72;Robot(Data.Get(profiles[i],"agent"),station,x+offset,z+(i%2==0?-.18:.18),workX,workZ,baseY);}
+        }
+        void Robot(string assigned,string station,double x,double z,double workX,double workZ,double baseY) {
+            var actor=new AgentActor{Agent=assigned,Station=station,HomeX=x,HomeZ=z,WorkX=workX,WorkZ=workZ,BaseY=baseY,X=x,Z=z,Phase=actors.Count*1.37};actors.Add(actor);
+            var root=new Model3DGroup();var transform=new Transform3DGroup();transform.Children.Add(actor.VisibilityScale);transform.Children.Add(new RotateTransform3D(actor.Facing));transform.Children.Add(actor.Position);root.Transform=transform;world.Children.Add(root);
             var body=new Model3DGroup{Transform=actor.Bob};root.Children.Add(body);var previous=meshTarget;meshTarget=body;
             Box(0,.7,0,.42,.49,.33,Ivory);Box(0,.71,.18,.25,.2,.03,Dark);Box(0,.66,.202,.17,.025,.014,Gold,0,true);
             Part(body,new RotateTransform3D(actor.Head,new Point3D(0,1.04,0)),delegate{
@@ -218,6 +225,9 @@ namespace AgenticStudio {
             agentStates.Clear();foreach(var pair in states)agentStates[pair.Key]=pair.Value;
             foreach(var actor in actors){actor.State=states.ContainsKey(actor.Station)?states[actor.Station]:"pending";actor.Indicator.Color=actor.State=="failed"?Gold:actor.State=="done"?Color.FromRgb(137,187,143):Mint;if(actor.State!="running")foreach(var scale in actor.PacketScales){scale.ScaleX=0;scale.ScaleY=0;scale.ScaleZ=0;}}
         }
+        public void UpdateRoleStates(Dictionary<string,string> states){
+            foreach(var actor in actors){bool included=states.ContainsKey(actor.Agent);actor.VisibilityScale.ScaleX=actor.VisibilityScale.ScaleY=actor.VisibilityScale.ScaleZ=included?1.2:0;actor.State=included?states[actor.Agent]:"inactive";actor.Indicator.Color=actor.State=="failed"?Gold:actor.State=="done"?Color.FromRgb(137,187,143):Mint;if(actor.State!="running")foreach(var scale in actor.PacketScales){scale.ScaleX=scale.ScaleY=scale.ScaleZ=0;}}
+        }
         void Animate(object sender,EventArgs args) {
             double time=clock.Elapsed.TotalSeconds,dt=Math.Min(.1,Math.Max(0,time-previousFrame));previousFrame=time;
             var window=Window.GetWindow(this);if(!MotionEnabled||!IsVisible||(window!=null&&window.WindowState==WindowState.Minimized))return;
@@ -226,6 +236,7 @@ namespace AgenticStudio {
         void AnimateActors(double time,double dt) {
             if(crystalRotation!=null)crystalRotation.Angle=time*13%360;
             foreach(var a in actors){
+                if(a.State=="inactive")continue;
                 double t=time+a.Phase;bool work=a.State=="running",blocked=a.State=="failed",done=a.State=="done";
                 double targetX=work?a.WorkX:blocked||done?a.HomeX:a.HomeX+Math.Sin(t*.55)*.48;
                 double targetZ=work?a.WorkZ:blocked||done?a.HomeZ:a.HomeZ+Math.Sin(t*.55)*Math.Cos(t*.55)*.46;
@@ -288,8 +299,11 @@ namespace AgenticStudio {
             if(scene.actors.Find(a=>a.Station=="dock").Indicator.Color!=Gold)throw new Exception("Blocked status did not reach the robot indicator.");
             foreach(var actor in scene.actors)if(actor.Station!="work"&&actor.PacketScales[0].ScaleX!=0)throw new Exception("Idle station displayed work packets.");
             scene.UpdateAgentStates(new Dictionary<string,string>{{"work","done"}});if(worker.PacketScales[0].ScaleX!=0)throw new Exception("Work packets persisted after completion.");
+            if(scene.actors.Count!=18||scene.actors.Select(a=>a.Agent).Distinct().Count()!=18)throw new Exception("Expected one robot per assigned role.");
+            scene.UpdateRoleStates(new Dictionary<string,string>{{"blog-writing-agent","running"},{"affiliate-agent","pending"}});
+            if(scene.actors.Count(a=>a.State=="running")!=1||scene.actors.Find(a=>a.Agent=="content-agent").VisibilityScale.ScaleX!=0||scene.actors.Find(a=>a.Agent=="affiliate-agent").State!="pending")throw new Exception("Role-specific motion or optional robot visibility failed.");
             scene.ToggleMotion();double angle=scene.crystalRotation.Angle;scene.Animate(null,EventArgs.Empty);if(scene.crystalRotation.Angle!=angle||scene.MotionEnabled)throw new Exception("Motion pause failed.");scene.ToggleMotion();if(!scene.MotionEnabled)throw new Exception("Motion resume failed.");
-            return "PASS: camera orbit/pan, projected station labels, zoom limits/reset, idle robot motion, running walk-to-desk/typing, blocked indicators, queue-bound work packets, completion transitions, and motion pause/resume. No job files were changed.";
+            return "PASS: 18 distinct role robots, per-role state/visibility, camera orbit/pan, projected station labels, zoom limits/reset, idle robot motion, running walk-to-desk/typing, blocked indicators, queue-bound work packets, completion transitions, and motion pause/resume. No job files were changed.";
         }
         void PositionLabels() {
             double w=ActualWidth,h=ActualHeight;if(w<1||h<1)return;
