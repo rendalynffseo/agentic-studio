@@ -38,6 +38,8 @@ Output: page map and internal-link matrix. Pass when coverage fits the research,
 
 ## 06 — content-agent: Useful copy and search snippets
 
+For `blog_enabled` tasks, follow `templates/BLOG-WORKFLOW.md`: create the requested articles from the approved plan and research, with distinct intent, finished copy, metadata, and internal links. Carry the plan into development for real post routes and a blog index. QA must check the requested count and actual pages. Respect provided/hybrid copy rules.
+
 First read `content_mode` and `content_blocks`. `provided` uses the user's supplied body copy; `hybrid` preserves it while writing missing sections. Run `node scripts/content-agent.mjs prepare --job <job>`, then write `artifacts/content-placement.json` mapping every block to a page/section with a reason and preserve_exact=true. Honor pinned locations, use semantic judgment for auto placement, and never rewrite supplied text for SEO. Validate the map with `check-map`. Include source/placement evidence in the deliverable's `user_content` object. Flag conflicts or unsupported claims rather than silently editing or omitting a block.
 
 Write finished page copy: answer-first opening, clear H1/headings, meaningful detail, relevant entities, descriptive links, and accurate conversion copy. Supply a primary title and meta description per page plus alternative hypotheses for later CTR testing. Make promises match the page. Include real author/business identity and proof only when supplied or verified. Use the audience's language naturally.

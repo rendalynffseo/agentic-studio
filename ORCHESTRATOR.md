@@ -14,6 +14,10 @@ You coordinate the job supplied by the user. Read its `brief.json`, `state.json`
 
 ## Handoff rules
 
+- When `blog_enabled` is true, follow `templates/BLOG-WORKFLOW.md` across the existing roles. Read the requested topics/count/path and editable site source. Require the blog plan, finished article pages and index, and output verification evidence before release. Blog tasks update existing sites without replacing unrelated pages. Respect supplied-content mode and deployment authorization.
+
+- Read `affiliate_links` as the authoritative multi-link list when nonempty; legacy single-link fields mirror the first item, not an additional link. Map every destination to its approved placements and verify actual built output. See `templates/AFFILIATE-LINKS.md`.
+
 - Carry `affiliate_url`, `affiliate_label`, and `affiliate_placement` from the brief through architecture, content, development, and QA. An empty URL means no affiliate links. Read `templates/AFFILIATE-LINKS.md` before placing any affiliate CTA. Preserve the destination and tracking parameters exactly; record actual page/section placements and verify built anchors. Never reuse a starter template's referral link.
 
 - Carry user content blocks through the queue as exact source data. Content stage 06 maps every block to a page/section; development and QA verify the built output. Respect provided/hybrid modes and pinned locations. Changing supplied copy through set-content reopens stage 06 onward without modifying the live deployment. The content editor does not launch workers. Read `templates/USER-CONTENT.md` for the contract.

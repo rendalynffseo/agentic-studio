@@ -1,0 +1,17 @@
+# Blog publishing tasks
+
+The desktop task form has a Blog agent section. Enable **Create blog posts**, enter topics or titles (one per line), choose 1–20 posts, and set a section path such as `/blog/`. Empty topics authorize the agent to propose topics from the approved brief and current research. The requested count includes supplied topic lines; do not silently drop topics.
+
+**Add blog task** in the inspector creates a separate draft task using the selected site's context. Confirm the existing site URL and local project path. This preserves the original queue and does not edit or publish the site on its own. For an existing project, inspect its code and existing posts before editing. Reuse its design, avoid duplicate topics, and preserve existing pages. New websites still use the selected source template. If only a hosted URL is provided and no editable source is available, report the missing source instead of pretending to update it.
+
+## Role handoffs
+
+1. Intake/planning: read `blog_enabled`, `blog_topics`, `blog_post_count`, `blog_path`, `existing_site`, `project_path`, and `affiliate_links`. Confirm an achievable scope and source location. Save `artifacts/blog-plan.json` with a `posts` array containing one record per requested post: title/topic, unique slug, primary intent/query, audience, purpose, and proposed internal links. With empty topics, research before finalizing the plan.
+2. Research: inspect current search intent and relevant sources. Save observed queries, dates, source links, and factual claim notes. Do not invent search volume, difficulty, rankings, author credentials, or statistics.
+3. Architecture: allocate distinct routes under the requested blog path and create/update the blog index. Avoid competing posts with the same intent. Link each post to a relevant parent or service page and related posts where useful.
+4. Content: produce finished articles with useful opening answers, clear headings, appropriate depth, titles, descriptions, and source-backed claims. Preserve user-supplied copy and pinned placements. In `provided` mode, missing article body copy is a blocker unless writing it was explicitly authorized; `hybrid` permits gap sections. Never invent bylines or imply editorial review that did not occur.
+5. Development: build the index and actual article routes with the site's existing stack. Add crawlable links, navigation, metadata, canonical URLs consistent with the domain decision, and visible dates/authors only when accurate. Use article schema only for facts visible on the page. Insert approved affiliate CTAs according to AFFILIATE-LINKS.md; do not turn every post into an unrelated promotion.
+6. Technical SEO/QA: build and inspect the actual pages, check requested count and routes, links, metadata, responsive behavior, supplied copy, affiliate hrefs, disclosure, and sitemap inclusion when indexable. Save `artifacts/blog-verification.md` with output paths, commands, observed results, and unresolved limitations. Validate the post count against the brief. These are agent review requirements; the queue does not automatically count blog pages.
+7. Release: provide preview and edit locations. Publish only when separately authorized. A local draft is not a published post. Measurement records real results later; it does not guarantee search traffic or schedule background posting.
+
+The desktop queues instructions; a coding agent executes these sequential roles using ORCHESTRATOR.md. Blog updates are explicit tasks, not an unattended recurring publishing service.

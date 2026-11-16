@@ -32,5 +32,10 @@
   "additional_instructions": "",
   "affiliate_url": "",
   "affiliate_label": "",
-  "affiliate_placement": "auto"
+  "affiliate_placement": "auto",
+  "affiliate_links": [],
+  "blog_enabled": false,
+  "blog_topics": "",
+  "blog_post_count": 3,
+  "blog_path": "/blog/"
 }

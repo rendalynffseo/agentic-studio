@@ -10,6 +10,7 @@ desktop/ui-test-result.txt
 desktop/scene-test-result.txt
 desktop/content-*.json
 desktop/content-ui-test-result.txt
+desktop/publishing-test-result.txt
 Agentic Studio.content-preview.exe
 Agentic Studio.previous-*.exe
 

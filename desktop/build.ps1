@@ -13,7 +13,7 @@ $references = @(
 )
 $arguments = @('/nologo', '/target:winexe', '/optimize+', '/utf8output', ('/out:' + (Join-Path $projectRoot $OutputName)))
 foreach ($reference in $references) { $arguments += '/reference:' + $reference }
-$arguments += @((Join-Path $PSScriptRoot 'App.cs'), (Join-Path $PSScriptRoot 'Scene.cs'), (Join-Path $PSScriptRoot 'ContentEditor.cs'))
+$arguments += @((Join-Path $PSScriptRoot 'App.cs'), (Join-Path $PSScriptRoot 'Scene.cs'), (Join-Path $PSScriptRoot 'ContentEditor.cs'), (Join-Path $PSScriptRoot 'PublishingEditor.cs'))
 & $compiler $arguments
 if ($LASTEXITCODE -ne 0) { throw 'Desktop build failed.' }
 Write-Output ('Built: ' + (Join-Path $projectRoot $OutputName))
