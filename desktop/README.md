@@ -6,7 +6,7 @@ Keep the executable in this workspace: it uses the adjacent queue scripts, `desk
 
 ## Use the room
 
-New tasks use a specialist team with one assigned worker per role: 14 core agents and up to four optional agents for blog strategy, blog writing, affiliate placement, and exact-content placement. Open **Agent team** for individual responsibilities, instructions, status, and handoff recipients. **Copy this agent task** gives the next worker its inputs, required outputs and commands. The external coding agent runner performs the work; the desktop does not launch model processes.
+New tasks use a specialist team with one assigned worker per role: 14 core agents and up to four optional agents for blog strategy, blog writing, affiliate placement, and exact-content placement. Open **Agent team** for individual responsibilities, instructions, status, and handoff recipients. **Open AI worker** opens the native Start / continue, pause, stop, connection and live-log controls. The desktop launches a separate signed-in Codex process for each role; VS Code can remain closed. See [worker instructions](WORKER.md).
 
 Each assigned role has its own robot. Optional roles absent from the task are hidden. Only the role with a real running queue task shows working activity. Existing queued tasks offer **Use specialist team** before execution begins; active and completed tasks keep their existing assignments.
 
@@ -38,16 +38,11 @@ Use **Content writer** to paste your own copy. Choose exact supplied content or 
 - The top counters show completed stages, tasks actually marked running, and failed tasks needing attention. There are no simulated usage, ranking, or performance numbers.
 - **Edit brief** edits a job before execution starts. Saving a previously failed intake brief returns it to the queue.
 - **Open folder** opens the actual job folder. Deliverables open as text in a native window; HTML is not executed.
-- The app checks the job files every two seconds. Keep your coding agent working on the selected job and watch its actual handoffs appear.
+- The app checks the job files every two seconds. Start the native AI worker for the selected job and watch its actual handoffs appear.
 
-The app is a queue monitor and brief editor. An AI worker service is not connected, so it does not execute research or build sites on its own. To execute a task, give your coding agent:
+The native AI worker can execute tasks directly. Open **AI** in the left rail or **Start / continue task** in the inspector, confirm sign-in, and click **Start / continue**. The engine runs hidden; its real output appears in the panel. No prompt copying or VS Code window is needed.
 
-```text
-Continue jobs/<job-id> using ORCHESTRATOR.md.
-Execute roles sequentially and save real evidence before completing each stage.
-```
-
-Like the CLI queue, use one writer/orchestrator at a time. The brief locks when any task has started or completed; ask the orchestrator to reopen intake before revising work that has already begun. The app does not publish or deploy sites.
+Like the CLI queue, use one writer/orchestrator at a time. The brief locks when any task has started or completed; ask the orchestrator to reopen intake before revising work that has already begun. The worker follows deployment_authorized in each task and stops with a real blocker if required access or permissions are missing.
 
 ## Rebuild
 

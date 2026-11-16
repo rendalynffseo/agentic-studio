@@ -11,6 +11,12 @@ desktop/scene-test-result.txt
 desktop/content-*.json
 desktop/content-ui-test-result.txt
 desktop/publishing-test-result.txt
+desktop/worker-settings.json
+desktop/worker-runtime.lock
+desktop/worker-control.json
+desktop/worker-smoke-brief.json
+desktop/worker-live-result.json
+desktop/worker-ui-test-result.txt
 Agentic Studio.content-preview.exe
 Agentic Studio.previous-*.exe
 

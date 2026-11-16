@@ -1,6 +1,6 @@
 # Agentic SEO Website Workflow
 
-**Desktop interface:** double-click `Agentic Studio.exe` or `Start-Agentic.cmd`. The native Windows app has a 3D operations room, real queue counters, clickable stations, task creation, brief editing, and a live task inspector. See [desktop instructions](desktop/README.md). AI execution still requires a coding agent; the UI does not launch AI workers.
+**Desktop interface:** double-click `Agentic Studio.exe` or `Start-Agentic.cmd`. The native Windows app has a 3D operations room, real queue counters, clickable stations, task creation, brief editing, and a live task inspector. See [desktop instructions](desktop/README.md). The built-in AI worker runs roles through your signed-in Codex engine without opening VS Code.
 
 A sequential workflow for turning a user brief into a useful, search-friendly website, then improving organic search click-through rate (CTR) using observed results. Rankings, indexing, rich results, and CTR gains are goals, never guaranteed deliverables.
 
@@ -10,11 +10,11 @@ Install Node.js 18 or newer and run `npm test`; no npm install is needed. On Win
 
 ## Start here
 
-**Agent team:** new desktop tasks assign one agent per role. There are 14 core agents and four optional specialists, for up to 18 agents per task. Open **Agent team** to see responsibilities, status, instructions, and who receives each handoff. **Copy this agent task** prepares the next agent's assignment. Blog and affiliate agents are included when those features are requested; exact-content placement is included for supplied-copy tasks. The coding agent runner executes the roles.
+**Agent team:** new desktop tasks assign one agent per role. There are 14 core agents and four optional specialists, for up to 18 agents per task. Open **Agent team** to see responsibilities, status, instructions, and who receives each handoff. **Open AI worker** starts the native execution panel. Blog and affiliate agents are included when those features are requested; exact-content placement is included for supplied-copy tasks. The desktop starts one Codex worker per role and verifies its handoff before advancing.
 
 Existing queued tasks can use **Use specialist team** before work starts. Active/completed queues retain their assignments. CLI users select `workflow_team: "specialist"` in the brief, or retain `"classic"` for the original 11-role sequence. Task IDs are stable; the saved task array defines execution order and the desktop displays consecutive agent numbers.
 
-After creating a desktop task, the **Start your task** dialog opens automatically. Click **Copy task instructions**, paste into your coding agent with this workspace open, and send. The inspector's **Start / continue task** button reopens these instructions. The desktop tracks real queue updates; copying instructions alone does not launch a worker.
+After creating a task, the **AI worker** panel opens. Check that it says **Signed in**, then click **Start / continue**. Watch the live log and room progress while the desktop runs each agent. **Pause after current agent** waits for a clean handoff; **Stop worker** interrupts and preserves partial files. The **AI** rail button opens engine settings even without a task. See [desktop worker instructions](desktop/WORKER.md).
 
 **Affiliate links:** enter the destination, button text, and placement in New task or Edit brief. Use `auto` for the agent to select relevant CTA locations. See [affiliate placement instructions](templates/AFFILIATE-LINKS.md).
 
@@ -28,10 +28,10 @@ Website design now starts from the user's [template gallery](https://igaming-tem
 
 1. Copy `templates/brief.json`, fill in the project details, and save your copy.
 2. Initialize a job: `node workflow.mjs init --brief templates/brief.json --job jobs/my-site`
-3. Give your agent runner `ORCHESTRATOR.md` and the job directory. It should claim the next task, read that task's agent instructions, do the work, save the deliverable, and complete the task.
+3. Open the desktop AI worker and click Start, or run `node scripts/desktop-worker.mjs run --job jobs/my-site`.
 4. Inspect progress: `node workflow.mjs status --job jobs/my-site`
 
-The Node.js tool is a local queue and handoff tracker. It does not call a model, launch autonomous agents, build a website, or publish anything by itself. An agent runner or a human follows the instructions and invokes the commands. Node.js 18+; no packages, credentials, or paid services required for queue management.
+`workflow.mjs` remains the model-free queue. The desktop worker is a separate runtime that launches the installed Codex engine, streams real output, and advances only validated roles. Queue management requires Node.js 18+ and no packages. AI execution additionally requires an installed, signed-in Codex CLI, internet access, and the account's normal usage allowance. VS Code does not need to be running.
 
 ## The sequence
 

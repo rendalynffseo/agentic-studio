@@ -23,7 +23,7 @@ function evidence(job, value) {
   requireThat(stat.isFile() && stat.size > 0, `Missing or empty evidence: ${value}`);
   return file;
 }
-function validate(job, task) {
+export function validate(job, task) {
   const file = evidence(job, task.artifact);
   const data = read(file);
   requireThat(data && typeof data === 'object' && !Array.isArray(data), 'Deliverable must be an object');

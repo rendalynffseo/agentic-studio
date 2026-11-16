@@ -4,7 +4,11 @@
 
 Double-click **Agentic Studio.exe** or **Start-Agentic.cmd** in this workspace. The native desktop app shows a 3D agent operations room, live queue stages, task briefs, activity, and deliverables. It works without a browser or local HTTP server. See [desktop instructions](desktop/README.md).
 
-## Open the live dashboard
+## Run agents from the desktop
+
+Create or select a task, open **Start / continue task**, confirm the engine is signed in, and click **Start / continue**. VS Code can remain closed. The native AI worker provides live output, pause, stop, sign-in and engine selection. See [worker instructions](desktop/WORKER.md).
+
+## Optional browser dashboard
 
 Run `npm start` from this workspace, then open **http://127.0.0.1:4311**. Keep the server running while using it. The dashboard reads real job files every three seconds, shows agent stages and activity, opens saved deliverables, and lets you save the initial brief and retry failed intake. It binds only to this computer.
 
@@ -23,7 +27,7 @@ node workflow.mjs init --brief templates/brief.json --job jobs/my-site
 node workflow.mjs next --job jobs/my-site
 ```
 
-Give your coding agent this prompt, replacing the job name if necessary:
+For an external coding-agent runner instead of the native worker, use this optional prompt:
 
 ```text
 Execute the SEO website workflow for jobs/my-site.
