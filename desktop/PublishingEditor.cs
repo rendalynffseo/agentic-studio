@@ -17,15 +17,15 @@ namespace AgenticStudio {
         static Brush B(string color){return new SolidColorBrush((Color)ColorConverter.ConvertFromString(color));}
         public PublishingEditor(Dictionary<string,object> input,Func<string,Action,Button> makeButton){
             button=makeButton;Margin=new Thickness(0,22,0,0);
-            Label(this,"AFFILIATE LINKS",true);Label(this,"Add destinations and choose auto placement or specify a page / section. Blank URLs are ignored.",false);Children.Add(linkCards);
+            Label(this,"AFFILIATE LINKS (OPTIONAL)",true);Label(this,"Add a link and button text. Leave placement on auto for the agent to choose the right spot.",false);Children.Add(linkCards);
             add=button("Add affiliate link",delegate{AddLink(null);});Children.Add(add);
             if(input.ContainsKey("affiliate_links")&&input["affiliate_links"] is IEnumerable){foreach(object item in (IEnumerable)input["affiliate_links"]){var link=item as Dictionary<string,object>;if(link!=null)AddLink(link);}}
             if(links.Count==0&&!String.IsNullOrWhiteSpace(Data.Get(input,"affiliate_url")))AddLink(new Dictionary<string,object>{{"url",Data.Get(input,"affiliate_url")},{"label",Data.Get(input,"affiliate_label")},{"placement",Data.Get(input,"affiliate_placement")}});
-            if(links.Count==0)AddLink(null);
-            Label(this,"BLOG AGENT",true);blogs.Content="Create blog posts for this task";blogs.Foreground=B("#e4e7de");blogs.Margin=new Thickness(0,8,0,12);blogs.IsChecked=input.ContainsKey("blog_enabled")&&Convert.ToBoolean(input["blog_enabled"]);System.Windows.Automation.AutomationProperties.SetName(blogs,"Create blog posts");Children.Add(blogs);Children.Add(blogFields);
+
+            Label(this,"BLOG POSTS (OPTIONAL)",true);blogs.Content="Create blog posts for this task";blogs.Foreground=B("#e4e7de");blogs.Margin=new Thickness(0,8,0,12);blogs.IsChecked=input.ContainsKey("blog_enabled")&&Convert.ToBoolean(input["blog_enabled"]);System.Windows.Automation.AutomationProperties.SetName(blogs,"Create blog posts");Children.Add(blogs);Children.Add(blogFields);
             Label(blogFields,"Topics or titles: one per line. Leave empty for the agent to research topics.",false);topics=Input(Data.Get(input,"blog_topics"),"Blog topics",true);blogFields.Children.Add(topics);
             Label(blogFields,"Number of posts (1–20). Topic lines must not exceed this count.",false);count=Input(Data.Get(input,"blog_post_count")==""?"3":Data.Get(input,"blog_post_count"),"Blog post count",false);blogFields.Children.Add(count);
-            Label(blogFields,"Blog section path",false);path=Input(Data.Get(input,"blog_path")==""?"/blog/":Data.Get(input,"blog_path"),"Blog path",false);blogFields.Children.Add(path);
+            Label(blogFields,"Where should posts appear? (default: /blog/)",false);path=Input(Data.Get(input,"blog_path")==""?"/blog/":Data.Get(input,"blog_path"),"Blog path",false);blogFields.Children.Add(path);
             Label(blogFields,"The agent researches topics, writes posts, builds a blog index, adds internal links and metadata, and checks the output. Use Content writer below for your own exact text. Publishing requires separate authorization.",false);
             blogs.Checked+=delegate{blogFields.Visibility=Visibility.Visible;};blogs.Unchecked+=delegate{blogFields.Visibility=Visibility.Collapsed;};blogFields.Visibility=blogs.IsChecked==true?Visibility.Visible:Visibility.Collapsed;
         }
