@@ -46,6 +46,8 @@ Output: complete page copy, title/meta table, claim/source ledger, and snippet h
 
 ## 07 — development-agent: Design and build
 
+Read `templates/AFFILIATE-LINKS.md`. When the brief supplies an affiliate URL, implement the approved CTA placements with the exact destination, suitable link attributes, and a visible disclosure. Save `artifacts/affiliate-placement.json` with the URL, label, and every actual page/section placement. Inspect built HTML and save verification evidence; QA independently checks this evidence and actual anchors. Empty URL means no affiliate CTA. Do not insert starter referral URLs.
+
 For supplied-copy modes, implement the approved placement map with exact escaped-text elements and stable data-content-block/data-content-section markers. Use `renderUserContent` or the content-agent render command; add white-space:pre-wrap in adaptation CSS. After building, run content-agent verify against the real output. Record output_directory and verification_evidence in user_content. Queue completion rescans the output and rejects missing/changed blocks. See `templates/USER-CONTENT.md`.
 
 Run `node scripts/template-agent.mjs prepare --job <job>` to verify and save the selected source stylesheet and provenance. Read the real source directory returned by the selection report. Implement the selected design, write `artifacts/template-adaptation.md`, and include the prepared provenance as the deliverable's `design` object. Keep `design_template_id` as `auto` for agent-selected tasks; `design_selected_template_id` records the chosen template. New tasks cannot complete development with unrelated self-hashed CSS or a different template than their selection report.

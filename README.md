@@ -10,6 +10,10 @@ Install Node.js 18 or newer and run `npm test`; no npm install is needed. On Win
 
 ## Start here
 
+After creating a desktop task, the **Start your task** dialog opens automatically. Click **Copy task instructions**, paste into your coding agent with this workspace open, and send. The inspector's **Start / continue task** button reopens these instructions. The desktop tracks real queue updates; copying instructions alone does not launch a worker.
+
+**Affiliate links:** enter the destination, button text, and placement in New task or Edit brief. Use `auto` for the agent to select relevant CTA locations. See [affiliate placement instructions](templates/AFFILIATE-LINKS.md).
+
 **Bring your own copy:** the desktop **Content writer** editor supports exact user content, automatic page/section placement, and hybrid copy with agent-written gap sections. The queue verifies placement evidence and rescans built HTML for missing or changed wording. See [user-content instructions](templates/USER-CONTENT.md).
 
 **All 13 template sources are installed.** New tasks now choose a design automatically from the brief and save the reason plus ranked alternatives. Planning can refine the choice; an explicit template ID takes priority. See [template library instructions](templates/TEMPLATE-LIBRARY.md) or run `npm run templates` to verify the complete local library.

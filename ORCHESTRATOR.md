@@ -14,6 +14,8 @@ You coordinate the job supplied by the user. Read its `brief.json`, `state.json`
 
 ## Handoff rules
 
+- Carry `affiliate_url`, `affiliate_label`, and `affiliate_placement` from the brief through architecture, content, development, and QA. An empty URL means no affiliate links. Read `templates/AFFILIATE-LINKS.md` before placing any affiliate CTA. Preserve the destination and tracking parameters exactly; record actual page/section placements and verify built anchors. Never reuse a starter template's referral link.
+
 - Carry user content blocks through the queue as exact source data. Content stage 06 maps every block to a page/section; development and QA verify the built output. Respect provided/hybrid modes and pinned locations. Changing supplied copy through set-content reopens stage 06 onward without modifying the live deployment. The content editor does not launch workers. Read `templates/USER-CONTENT.md` for the contract.
 
 - All 13 template sources are locally indexed in `vendor/templates/library-manifest.json`. Task initialization automatically saves a ranked `artifacts/template-selection.json` and selection event. Planning reruns `node scripts/template-agent.mjs choose --job <job>` after intake data is complete; automatic choices may be refined with an explicit reason, while user-pinned IDs take priority. Development runs `prepare --job <job>`, reads the selected source, adapts it to the approved brief, and includes the generated provenance under its deliverable's `design` key. New task completion checks enforce the selected ID, exact installed source hash, library version, and saved selection evidence.

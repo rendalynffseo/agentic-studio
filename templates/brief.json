@@ -20,10 +20,17 @@
   "design_catalog_url": "https://igaming-templates.vercel.app",
   "design_template_id": "auto",
   "design_template_name": "Select from the catalog to fit the approved brief",
-  "design_preferences": {"site_type":"auto","palette":[],"layout":"auto"},
+  "design_preferences": {
+    "site_type": "auto",
+    "palette": [],
+    "layout": "auto"
+  },
   "constraints": [],
   "analytics_available": false,
   "search_console_available": false,
   "deployment_authorized": false,
-  "additional_instructions": ""
+  "additional_instructions": "",
+  "affiliate_url": "",
+  "affiliate_label": "",
+  "affiliate_placement": "auto"
 }
